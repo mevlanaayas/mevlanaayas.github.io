@@ -53,7 +53,7 @@ var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<p>Dates: %data%</p>';
 var HTMLprojectDescription = '<p>Description: %data%</p>';
 var HTMLprojectSkills = '<p>Skill(s): %data%</p>';
-var HTMLprojectMember = '<p>Members: %data% <i class="user icon"></i></p>';
+var HTMLprojectMember = '<p>Member: %data% <i class="user icon"></i></p>';
 var HTMLprojectMembers = '<p>Members: %data% <i class="users icon"></i></p>';
 var HTMLprojectFiles = '<p>Files: %data%</p>';
 var HTMLprojectLinks = '<p>Links: %data%</p>';

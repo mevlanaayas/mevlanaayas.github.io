@@ -2,7 +2,7 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
-
+var contactlinecolor = "purple";
 var counter = 0;
 
 var communication = {
@@ -74,7 +74,7 @@ var work = {
 		"title":"Intern",
 		"dates":"06/2016-08/2016",
 		"describtion":"I had an internship at VB-AP that works on ERP and SAP.",
-		"detail" : "Here, some detail about my Internship adventure.",
+		"detail" : "Here, there is no detail about my Internship adventure.",
 		"skills" : "HTML/CSS-JavaScript",
 		"points" : 4.7,
 		"jobdone" : "Have Worked on Official Web Site",
@@ -88,7 +88,7 @@ var projects = {
 	{
 		"title":"Binary Multiplication",
 		"dates":"09/2015-10/2015",
-		"describtion":"I have studied in marmarauniversity for 5 years. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"describtion":"Multiplication of binary numbers by using data structure of linked list. Project extends some sorting algorithm and it was written with C programming language.",
 		"skills" : "C Programming, Data Structures",
 		"members" : 1,
 		"files" : "none",
@@ -100,7 +100,7 @@ var projects = {
 	{
 		"title":"4D Tree",
 		"dates":"10/2015-11/2015",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"Storing lots of personals data by using data structure of Multi dimension trees. Project extends some sorting algorithm and it was written with C programming language.",
 		"skills" : "C Programming, Data Structures",
 		"members" : 1,
 		"files" : "none",
@@ -111,7 +111,7 @@ var projects = {
 	{
 		"title":"Priority Queue",
 		"dates":"11/2015-12/2015",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"Priority queue implementation by using data structure of binomial heap. Project extends some sorting algorithm and it was written with C programming language.",
 		"skills" : "C Programming, Data Structures",
 		"members" : 1,
 		"files" : "none",
@@ -120,9 +120,9 @@ var projects = {
 		"img" : "none"
 	},
 	{
-		"title":"Hare And Hound",
+		"title":"Hare And Hound Strategy Game",
 		"dates":"02/2016-05/2016",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"Implementation of Hare and Hounds game tha is playing on command line in our project. Project was developed with Assembly programming language",
 		"skills" : "Assembly Programming",
 		"members" : 1,
 		"files" : "none",
@@ -133,7 +133,7 @@ var projects = {
 	{
 		"title":"Bricker Puzzle Game",
 		"dates":"09/2016-10/2016",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"Implementation of Bricker game tha is playing on command line in our project. Project is typpe of OOP software and it was written with Java programming language ",
 		"skills" : "Java Programming, Object Oriented Programming",
 		"members" : 1,
 		"files" : "none",
@@ -144,7 +144,7 @@ var projects = {
 	{
 		"title":"Linux Bash",
 		"dates":"10/2015-11/2015",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"Implementation of Linux bash that do exactly same operations like original bash. Project was written by using C programming language and icnlude some advanced data structure",
 		"skills" : "C Programming, Shell Programming, Programming on UNIX",
 		"members" : 1,
 		"files" : "none",
@@ -155,7 +155,7 @@ var projects = {
 	{
 		"title":"Threads",
 		"dates":"11/2015-12/2015",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"Implementation of threads that  are already working in our computers. Project was written on Linux operating system like previous bash project.",
 		"skills" : "C Programming, Operating Systems",
 		"members" : 1,
 		"files" : "none",
@@ -166,7 +166,7 @@ var projects = {
 	{
 		"title":"SQL",
 		"dates":"09/2016-12/2016",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"Implementation of Sample database and MicrosoftSQL for the chosen company. The database was created and Some advanced SQL properties were used.",
 		"skills" : "Microsoft SQL, Java Programming",
 		"members" : 2,
 		"files" : "none",
@@ -177,7 +177,7 @@ var projects = {
 	{
 		"title":"CPU",
 		"dates":"09/2016-12/2016",
-		"describtion":"I have studied in kasüstücpl for 4 years. ",
+		"describtion":"CPU and Storage design with Logism. CPU that do eleven operations and produce signals. Storage sotres data.",
 		"skills" : "Logism, Logic Design",
 		"members" : 3,
 		"files" : "none",
@@ -366,16 +366,16 @@ educations.display = function() {
 	}
 
 }
-var color = "red";
+
 
 
 communication.display = function () {
 	// body...
 
-	var formattedemail =  HTMLemail.replace("%color%", color);
-	var formattedtwitter = HTMLtwitter.replace("%color%", color);
-	var formattedgithub = HTMLgithub.replace("%color%", color);
-	var formattedlocation = HTMLlocation.replace("%color%", color);
+	var formattedemail =  HTMLemail.replace("%color%", contactlinecolor);
+	var formattedtwitter = HTMLtwitter.replace("%color%", contactlinecolor);
+	var formattedgithub = HTMLgithub.replace("%color%", contactlinecolor);
+	var formattedlocation = HTMLlocation.replace("%color%", contactlinecolor);
 
 	var formattedemail =  formattedemail.replace("%data%", communication.email);
 	var formattedtwitter = formattedtwitter.replace("%data%", communication.twitter);
