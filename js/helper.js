@@ -28,7 +28,7 @@ var HTMLbioPic = '<img src="%data%">';
 var HTMLwelcomeMsg = '<span>%data%</span>';
 
 var HTMLskillsStart = '<h4>Skills at a Glance:</h4>';
-var HTMLskills = '<p>%data%</p>';
+var HTMLskills = '<div style = "margin-top: 14px">%data%</div>';
 //var HTMLskillsStars = '<i class="star yellow icon"></i>';
 
 
@@ -44,7 +44,7 @@ var HTMLworkDetail = '<p>Some Detail: <br>%data%</p>';
 var HTMLworkSkill = '<p>Worked On:<br>%data%</p>';
 var HTMLworkPoints = '<p>Internship Overall:<br>%data%</p>';
 var HTMLworkJob = '<p>JobDone:<br>%data%</p>';
-var HTMLworkWeb = '<p>WebPage:<br>%data%</p>';
+var HTMLworkWeb = '<a href="%data%" target="_blank"><i>WebPage</i></a>';
 
 
 
@@ -58,7 +58,7 @@ var HTMLprojectMembers = '<p>Members: %data% <i class="users icon"></i></p>';
 var HTMLprojectFiles = '<p>Files: %data%</p>';
 var HTMLprojectLinks = '<p>Links: %data%</p>';
 var HTMLprojectType = '<p>Type: %data%</p>';
-var HTMLprojectImage = '<p>Type: %data%</p><br>';
+var HTMLprojectImage = '<p>Image: %data%</p><br>';
 
 
 
@@ -67,16 +67,41 @@ var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = '<a href="#"> -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
-var HTMLschoolCurriculum= '<a href="#">Curriculum : %data%</a>';
+var HTMLschoolMajor = '<em> Major: %data%</em>';
+var HTMLschoolCurriculum= '<a href="%data%" target="_blank"><i>Curriculum</i></a>';
 
 
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineStart = '<div class="education-entry"></div>';
+var HTMLonlineClasses = '<h4>Online Classes: </h4>';
+var HTMLonlineTitle = '<a href="#">%data%</a>';
+var HTMLonlineAuthor = '<p> Author: <a href="#">%data%</a></p>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineSkills = '<p>Skills: %data%</p>';
+var HTMLonlineURL = '<a href="#">%data%</a>';
+var HTMLonlineLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
+
+
+var HTMLseminarStart = '<div class="education-entry"></div>';
+var HTMLSeminar = '<h4>Seminars: </h4>';
+var HTMLseminarPlaces = '<div class="location-text">%data%</div>';
+var HTMLseminarTitle = '<p>%data%</p>';
+var HTMLseminarGuest = '<a href="#">%data%';
+var HTMLseminarDates = '<div class="date-text">%data%</div>';
+var HTMLseminarGTitle = '-- %data%</a>';
+var HTMLseminarLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
+
+var HTMLactivityStart = '<div class="education-entry"></div>';
+var HTMLActivity = '<h4>Activities: </h4>';
+var HTMLactivityPlaces = '<div class="location-text">%data%</div>';
+var HTMLactivityTitle = '<p>%data%</p>';
+var HTMLactivityDates = '<a href="#">%data%';
+var HTMLactivityDays = '<div class="date-text">%data%</div>';
+var HTMLactivitySkills = '-- %data%</a>';
+var HTMLactivityLearnings = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
+var HTMLactivityCertificate = '<p>%data%</p>';
+var HTMLactivityFiles = '<p>%data%</p>';
+var HTMLactivityLinks = '<p>%data%</p>';
 
 
 

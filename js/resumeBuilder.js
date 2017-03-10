@@ -22,10 +22,10 @@ var communication = {
 	"welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
 	"skills": {
 		"C": 4,
-		"Java": 4,
+		"Java": 3,
 		"JavaScript": 4,
 		"HTML/CSS": 4,
-		"Python": 3,
+		"Python": 2,
 		"Reliability": 5,
 		"MicrosoftSQL": 3
 	}
@@ -33,39 +33,79 @@ var communication = {
 
 
 var educations = {
-	"schools" : [
-	{
-		"name":"Marmara University",
-		"city":"Istanbul",
-		"degree": "Bachelor",
-		"major":"CSE-Computer Science Engineering",
-		"entryyear":2013,
-		"website":"marmarauniversity.com",
-		"location" : "Kadikoy/Istanbul",
-		"curriculum"  : "none"
+	"schools": [{
+			"name": "Marmara University",
+			"city": "Istanbul",
+			"degree": "Bachelor",
+			"major": "CSE-Computer Science Engineering",
+			"entryyear": 2013,
+			"website": "marmarauniversity.com",
+			"location": "Kadikoy/Istanbul",
+			"curriculum": "http://dosya.marmara.edu.tr/eng/cse/2013/belgeler/mufredat/CSE_Curriculum_2013_and_later.pdf"
 
-	},
-	{
-		"name":"Kasustu CPL",
-		"city":"Trabzon",
-		"degree": "Highschool",
-		"major":"Math Science",
-		"entryyear":2009,
-		"website":"kasustucpl.com",
-		"location": "Yomra/Trabzon",
-		"curriculum"  : "none"
-	}
+		}, {
+			"name": "Kasustu CPL",
+			"city": "Trabzon",
+			"degree": "Highschool",
+			"major": "Math Science",
+			"entryyear": 2009,
+			"website": "kasustucpl.com",
+			"location": "Yomra/Trabzon",
+			"curriculum": "None"
+		}
 
 	],
-	"onlinecourses" : [
-	{
-		"title" : "Udacity javascript",
-		"school" : "Udacity",
-		"dates" : "2017",
-		"url" : "udacity.com"
-	}
-	]
-} 
+	"onlinecourses": [{
+		"title": "none 1",
+		"author": "Udacity",
+		"dates": "2017",
+		"skills": "none",
+		"url": "udacity.com",
+		"learnings": "none"
+	}],
+	"seminars": [{
+		"title": "none 1",
+		"place": "none",
+		"guest": "none",
+		"dates": "none",
+		"guesttitle": "none",
+		"learnings": "none"
+
+	}, {
+		"title": "none 2",
+		"place": "none",
+		"guest": "none",
+		"dates": "none",
+		"guesttitle": "none",
+		"learnings": "none"
+
+
+	}],
+	"activities": [{
+		"title": "none 1",
+		"place": "none",
+		"dates": "none",
+		"days": "none",
+		"skills": "none",
+		"learnings": "none",
+		"certificate": "true",
+		"files": "none",
+		"links": "none"
+
+	}, {
+		"title": "none 2",
+		"place": "none",
+		"dates": "none",
+		"days": "none",
+		"skills": "none",
+		"learnings": "none",
+		"certificate": "true",
+		"files": "none",
+		"links": "none"
+	}]
+
+};
+
 var work = {
 	"jobs" : [
 	{
@@ -78,7 +118,7 @@ var work = {
 		"skills" : "HTML/CSS-JavaScript",
 		"points" : 4.7,
 		"jobdone" : "Have Worked on Official Web Site",
-		"website" : "none"
+		"website" : "http://www.v-bap.com/vbap2/"
 	}
 	]
 } 
@@ -336,6 +376,8 @@ projects.display = function() {
 educations.display = function() {
 	// body...
 
+
+
 	for (school in educations.schools){
 		//create a new div for projects
 		$("#education").append(HTMLschoolStart);
@@ -349,6 +391,8 @@ educations.display = function() {
 
 		if(counter > 0){
 			$(".education-entry:last").append("<hr>");
+		}else{
+			$(".education-entry:last").append("<h4> Schools : </h4>");
 		}
 		
 
@@ -364,7 +408,125 @@ educations.display = function() {
 
 		counter++;
 	}
+	counter = 0;
+	/*
+	$(".education-entry:last").append("<br><br><br>");
 
+	for (onlinecourse in educations.onlinecourses){
+		//create a new div for projects
+		$("#education").append(HTMLonlineStart);
+		
+
+		var formattedonlineTitle = HTMLonlineTitle.replace("%data%", educations.onlinecourses[onlinecourse].title);
+		var formattedonlineAuthor = HTMLonlineAuthor.replace("%data%", educations.onlinecourses[onlinecourse].author);
+		var formattedonlineDates = HTMLonlineDates.replace("%data%", educations.onlinecourses[onlinecourse].date);
+		var formattedonlineSkills = HTMLonlineSkills.replace("%data%", educations.onlinecourses[onlinecourse].skills);
+		var formattedonlineUrl = HTMLonlineURL.replace("%data%", educations.onlinecourses[onlinecourse].url);
+		var formattedonlineLearning = 	HTMLonlineLearning.replace("%data%", educations.onlinecourses[onlinecourse].learnings);
+
+		if(counter > 0){
+			$(".education-entry:last").append("<hr>");
+		}else{
+			$(".education-entry:last").append(HTMLonlineClasses);
+		}
+		
+
+		$(".education-entry:last").append(formattedonlineTitle + " " + formattedonlineAuthor);
+ 		
+		$(".education-entry:last").append(formattedonlineDates);
+
+		$(".education-entry:last").append(formattedonlineSkills);
+
+		$(".education-entry:last").append(formattedonlineUrl);
+
+		$(".education-entry:last").append(formattedonlineLearning);
+
+		counter++;
+	}
+	counter = 0;
+
+	$(".education-entry:last").append("<br><br><br>");
+
+	for (seminar in educations.seminars){
+		//create a new div for projects
+		$("#education").append(HTMLseminarStart);
+		
+		var formattedseminarTitle = HTMLseminarTitle.replace("%data%", educations.seminars[seminar].title);
+		var formattedseminarAuthor = HTMLseminarGuest.replace("%data%", educations.seminars[seminar].guest);
+		var formattedseminarDates = HTMLseminarDates.replace("%data%", educations.seminars[seminar].dates);
+		var formattedseminarGTitle = HTMLseminarGTitle.replace("%data%", educations.seminars[seminar].guesttitle);
+		var formattedseminareLearning = HTMLseminarLearning.replace("%data%", educations.seminars[seminar].learnings);
+		var formattedseminarPlaces = HTMLseminarPlaces.replace("%data%", educations.seminars[seminar].place);
+
+		if(counter > 0){
+			$(".education-entry:last").append("<hr>");
+		}else{
+			$(".education-entry:last").append(HTMLSeminar);
+		}
+
+
+		$(".education-entry:last").append(formattedseminarAuthor + " " + formattedseminarGTitle);
+ 		
+		$(".education-entry:last").append(formattedseminarTitle);
+
+		$(".education-entry:last").append(formattedseminarDates);
+
+		$(".education-entry:last").append(formattedseminarPlaces);
+
+		$(".education-entry:last").append(formattedseminareLearning);
+
+		counter++;
+	}
+	counter = 0;
+
+	$(".education-entry:last").append("<br><br><br>");
+
+	for (activity in educations.activities){
+		//create a new div for projects
+		$("#education").append(HTMLactivityStart);
+		
+		var formattedactivityTitle = HTMLactivityTitle.replace("%data%", educations.activities[activity].title);
+		var formattedactivityDates = HTMLactivityDates.replace("%data%", educations.activities[activity].dates);
+		var formattedactivityDays = HTMLactivityDays.replace("%data%", educations.activities[activity].days);
+		var formattedactivitySkills = HTMLactivitySkills.replace("%data%", educations.activities[activity].skills);
+		var formattedactivityLearning = HTMLactivityLearnings.replace("%data%", educations.activities[activity].learnings);
+		var formattedactivityCertificate = HTMLactivityCertificate.replace("%data%", educations.activities[activity].certificate);
+		var formattedactivityFiles = HTMLactivityFiles.replace("%data%", educations.activities[activity].files);
+		var formattedactivityLinks = HTMLactivityLinks.replace("%data%", educations.activities[activity].links);
+		var formattedactivityPlaces = HTMLactivityPlaces.replace("%data%", educations.activities[activity].place);
+
+		if(counter > 0){
+			$(".education-entry:last").append("<hr>");
+		}else{
+			$(".education-entry:last").append(HTMLActivity);
+		}
+
+
+		$(".education-entry:last").append(formattedactivityTitle);
+ 		
+		$(".education-entry:last").append(formattedactivityDates);
+
+		$(".education-entry:last").append(formattedactivityDays);
+
+		$(".education-entry:last").append(formattedactivitySkills);
+
+		$(".education-entry:last").append(formattedactivityLearning);
+
+		$(".education-entry:last").append(formattedactivityCertificate);
+
+		$(".education-entry:last").append(formattedactivityFiles);
+
+		$(".education-entry:last").append(formattedactivityLinks);
+
+		$(".education-entry:last").append(formattedactivityPlaces);
+
+
+
+
+		counter++;
+	}
+	counter = 0;
+	*/	
 }
 
 
