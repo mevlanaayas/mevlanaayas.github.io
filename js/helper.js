@@ -12,7 +12,7 @@ Cameron Pittman
 These are HTML strings. As part of the course, you'll be using JavaScript functions
 replace the %data% placeholder text you see in them.
 */
-var HTMLunderCreation = '<div class="ui progress warning large"><div class="bar green" style="transition-duration: 300ms; width: 40%;"><div class="progress" style="color:white">40%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check for Demo</div></div><br>'
+var HTMLunderCreation = '<div class="ui progress warning large"><div class="bar green" style="transition-duration: 300ms; width: 45%;"><div class="progress" style="color:white">40%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check for Demo</div></div><br>'
 
 var HTMLheaderName = '<h1>%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span>';
@@ -37,8 +37,8 @@ var HTMLskills = '<div style = "margin-top: 14px">%data%</div>';
 
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
+var HTMLworkEmployer = '<p><a href="#">%data%';
+var HTMLworkTitle = ' - %data%</a></p>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p>Desc:<br>%data%</p>';
@@ -51,7 +51,7 @@ var HTMLworkWeb = '<a href="%data%" target="_blank"><i>WebPage</i></a>';
 
 
 var HTMLprojectStart = '<div class="project-entry eight wide column"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<p><a href="#">%data%</a></p>';
 var HTMLprojectDates = '<p>Dates: %data%</p>';
 var HTMLprojectDescription = '<p>Description: %data%</p>';
 var HTMLprojectSkills = '<p>Skill(s): %data%</p>';
@@ -63,8 +63,11 @@ var HTMLprojectType = '<p>Type: %data%</p>';
 var HTMLprojectImage = '<p>Image: %data%</p><br>';
 
 
-
-var HTMLschoolStart = '<div class="education-entry"></div>';
+var HTMLSchoolsDropdown = '<div id = "acordiontop" class= "ui basic accordion"></div>';
+var HTMLSchools = '<div class= "title">Schools: </div>';
+var HTMLSchoolsactive = '<div class= "title active">Schools: </div>';
+var HTMLschoolStart = '<div class="education-entry content"></div>';
+var HTMLschoolStartactive = '<div class="education-entry content active"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = '<a href="#"> -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';

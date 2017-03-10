@@ -375,15 +375,27 @@ projects.display = function() {
 	}
 
 }
-
+counter = 0;
 educations.display = function() {
 	// body...
 
 
-
+	
 	for (school in educations.schools){
 		//create a new div for projects
-		$("#education").append(HTMLschoolStart);
+		$("#education").append(HTMLSchoolsDropdown);
+
+		if(counter ==0){
+			$("#acordiontop").append(HTMLSchoolsactive);
+			$("#acordiontop").append(HTMLschoolStartactive);
+		}else{
+			$("#acordiontop").append(HTMLSchools);
+			$("#acordiontop").append(HTMLschoolStart);
+		}
+	    
+
+
+		
 
 		var formattededucationTitle = HTMLschoolName.replace("%data%", educations.schools[school].name);
 		var formattededucationMajor = HTMLschoolMajor.replace("%data%", educations.schools[school].major);
@@ -395,7 +407,7 @@ educations.display = function() {
 		if(counter > 0){
 			$(".education-entry:last").append("<hr>");
 		}else{
-			$(".education-entry:last").append("<h4> Schools : </h4>");
+			
 		}
 		
 
