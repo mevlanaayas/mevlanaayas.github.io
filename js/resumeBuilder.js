@@ -229,6 +229,9 @@ var projects = {
 	]
 }
 
+
+$("#creationsection").append(HTMLunderCreation);
+
 function displayBio(argument) {
 	// body...
 var formattedforeign = HTMLbioForeign.replace("%data%", bio.language);
