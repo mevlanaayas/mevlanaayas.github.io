@@ -13,6 +13,7 @@ var communication = {
 	"school": "Marmara University"
 }
 
+
  var bio= {
 	"name": "Mevlana Ayas",
 	"role": "Computer Engineer",
