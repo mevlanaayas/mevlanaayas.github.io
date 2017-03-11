@@ -61,7 +61,9 @@ var HTMLprojectLinks = '<p>Links: %data%</p>';
 var HTMLprojectType = '<p>Type: %data%</p>';
 var HTMLprojectImage = '<p>Image: %data%</p><br>';
 
-var HTMLSchoolsDropdown = '<div id = "schooltop" class= "ui basic accordion"></div>';
+var HTMLDropdown = '<div id = "accordiontop" class= "ui basic accordion"></div>';
+
+
 var HTMLSchools = '<div class= "title active"><i class="dropdown icon"></i> Schools </div>';
 var HTMLschoolContent = '<div id = "schoolcontent" class= "content active"></div>';
 var HTMLschoolStart = '<div class="education-entry"></div>';
@@ -72,7 +74,6 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em> Major: %data%</em>';
 var HTMLschoolCurriculum= '<a href="%data%" target="_blank"><i>Curriculum</i></a>';
 
-var HTMLOnlinesDropdown = '<div id = "onlinetop" class= "ui basic accordion"></div>';
 var HTMLOnlines = '<div class= "title"><i class="dropdown icon"></i> Online Courses </div>';
 var HTMLonlineContent = '<div id = "onlinecontent" class= "content"></div>';
 var HTMLonlineStart = '<div class="education-entry"></div>';
@@ -83,7 +84,6 @@ var HTMLonlineSkills = '<p>Skills: %data%</p>';
 var HTMLonlineURL = '<a href="#">%data%</a>';
 var HTMLonlineLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
-var HTMLSeminarsDropdown = '<div id = "seminartop" class= "ui basic accordion"></div>';
 var HTMLSeminars = '<div class= "title"> <i class="dropdown icon"></i> Seminars </div>';
 var HTMLseminarContent = '<div id = "seminarcontent" class= "content"></div>';
 var HTMLseminarStart = '<div class="education-entry"></div>';
@@ -94,7 +94,6 @@ var HTMLseminarDates = '<div class="date-text">%data%</div>';
 var HTMLseminarGTitle = '-- %data%</a>';
 var HTMLseminarLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
-var HTMLActivityDropdown = '<div id = "activitytop" class= "ui basic accordion"></div>';
 var HTMLActivity = '<div class= "title"> <i class="dropdown icon"></i> Activities </div>';
 var HTMLactivityContent = '<div id = "activitycontent" class= "content"></div>';
 var HTMLactivityStart = '<div class="education-entry"></div>';
