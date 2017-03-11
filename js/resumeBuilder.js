@@ -9,7 +9,7 @@ var communication = {
 	"email" : "mevlanaayas@gmail.com",
 	"github" : "github.com/mevlanaayas",
 	"twitter" : "twitter.com/alimetifarika",
-	"location" : "Kadikoy/Istanbul",
+	"location" : "Kadıköy-İstanbul",
 	"school": "Marmara University"
 }
 
@@ -245,6 +245,13 @@ var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
  $("#role").append(formattedRole);
  $("#welcomeMssg").append(formattedWelcome);
 
+ $("#welcomeMssg").append(HTMLBiosDropdown);
+ $("#biotop").append(HTMLBios);
+ $("#biotop").append(HTMLbioContent);
+
+ $("#biocontent").append(formattedHome); 
+ $("#biocontent").append(formattedforeign); 
+
 var formattedimg = HTMLbioPic.replace("%data%", bio.image);
  $("#pp").append(formattedimg);
 
@@ -256,13 +263,7 @@ for(skill in bio.skills){
 		$("#skillsdiv").append('<i class="star yellow icon"></i>');
 	}
 }
-$("#hometown").append(formattedHome);
-$("#foreign").append(formattedforeign);
-
-
 }
-
-
 
 function locationizer(work_obj) {
 	// body...
@@ -379,25 +380,15 @@ counter = 0;
 educations.display = function() {
 	// body...
 
-
+	$("#education").append(HTMLSchoolsDropdown);
+	$("#schooltop").append(HTMLSchools);
+	$("#schooltop").append(HTMLschoolContent);	
 	
 	for (school in educations.schools){
 		//create a new div for projects
-		$("#education").append(HTMLSchoolsDropdown);
 
-		if(counter ==0){
-			$("#acordiontop").append(HTMLSchoolsactive);
-			$("#acordiontop").append(HTMLschoolStartactive);
-		}else{
-			$("#acordiontop").append(HTMLSchools);
-			$("#acordiontop").append(HTMLschoolStart);
-		}
-	    
-
-
-		
-
-		var formattededucationTitle = HTMLschoolName.replace("%data%", educations.schools[school].name);
+		$("#schoolcontent").append(HTMLschoolStart);
+	    var formattededucationTitle = HTMLschoolName.replace("%data%", educations.schools[school].name);
 		var formattededucationMajor = HTMLschoolMajor.replace("%data%", educations.schools[school].major);
 		var formattededucationDegree = HTMLschoolDegree.replace("%data%", educations.schools[school].degree);
 		var formattededucationLocation = HTMLschoolLocation.replace("%data%", educations.schools[school].city);
@@ -409,8 +400,6 @@ educations.display = function() {
 		}else{
 			
 		}
-		
-
 		$(".education-entry:last").append(formattededucationTitle + " " + formattededucationDegree);
  		
 		$(".education-entry:last").append(formattededucationDate);
@@ -424,12 +413,16 @@ educations.display = function() {
 		counter++;
 	}
 	counter = 0;
-	/*
+	
 	$(".education-entry:last").append("<br><br><br>");
+
+	$("#education").append(HTMLOnlinesDropdown);
+	$("#onlinetop").append(HTMLOnlines);
+	$("#onlinetop").append(HTMLonlineContent);	
 
 	for (onlinecourse in educations.onlinecourses){
 		//create a new div for projects
-		$("#education").append(HTMLonlineStart);
+		$("#onlinecontent").append(HTMLonlineStart);
 		
 
 		var formattedonlineTitle = HTMLonlineTitle.replace("%data%", educations.onlinecourses[onlinecourse].title);
@@ -441,8 +434,6 @@ educations.display = function() {
 
 		if(counter > 0){
 			$(".education-entry:last").append("<hr>");
-		}else{
-			$(".education-entry:last").append(HTMLonlineClasses);
 		}
 		
 
@@ -462,9 +453,13 @@ educations.display = function() {
 
 	$(".education-entry:last").append("<br><br><br>");
 
+	$("#education").append(HTMLSeminarsDropdown);
+	$("#seminartop").append(HTMLSeminars);
+	$("#seminartop").append(HTMLseminarContent);	
+
 	for (seminar in educations.seminars){
 		//create a new div for projects
-		$("#education").append(HTMLseminarStart);
+		$("#seminarcontent").append(HTMLseminarStart);
 		
 		var formattedseminarTitle = HTMLseminarTitle.replace("%data%", educations.seminars[seminar].title);
 		var formattedseminarAuthor = HTMLseminarGuest.replace("%data%", educations.seminars[seminar].guest);
@@ -475,8 +470,6 @@ educations.display = function() {
 
 		if(counter > 0){
 			$(".education-entry:last").append("<hr>");
-		}else{
-			$(".education-entry:last").append(HTMLSeminar);
 		}
 
 
@@ -496,9 +489,13 @@ educations.display = function() {
 
 	$(".education-entry:last").append("<br><br><br>");
 
+	$("#education").append(HTMLActivityDropdown);
+	$("#activitytop").append(HTMLActivity);
+	$("#activitytop").append(HTMLactivityContent);
+
 	for (activity in educations.activities){
 		//create a new div for projects
-		$("#education").append(HTMLactivityStart);
+		$("#activitycontent").append(HTMLactivityStart);
 		
 		var formattedactivityTitle = HTMLactivityTitle.replace("%data%", educations.activities[activity].title);
 		var formattedactivityDates = HTMLactivityDates.replace("%data%", educations.activities[activity].dates);
@@ -512,8 +509,6 @@ educations.display = function() {
 
 		if(counter > 0){
 			$(".education-entry:last").append("<hr>");
-		}else{
-			$(".education-entry:last").append(HTMLActivity);
 		}
 
 
@@ -541,7 +536,7 @@ educations.display = function() {
 		counter++;
 	}
 	counter = 0;
-	*/	
+		
 }
 
 

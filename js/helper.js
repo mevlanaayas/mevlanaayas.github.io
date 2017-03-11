@@ -4,25 +4,29 @@ This file contains all of the code running in the background that makes resumeBu
 
 Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
 
-Cameron Pittman
+Created by Cameron Pittman, Mostly Changed by Mevlana Ayas
 */
 
 
 /*
 These are HTML strings. As part of the course, you'll be using JavaScript functions
-replace the %data% placeholder text you see in them.
+replace the %data%, %title%, %color% or %something% placeholder text you see in them.
 */
-var HTMLunderCreation = '<div class="ui progress warning large"><div class="bar green" style="transition-duration: 300ms; width: 45%;"><div class="progress" style="color:white">40%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check for Demo</div></div><br>'
+var HTMLunderCreation = '<div class="ui progress warning large"><div class="bar green" style="transition-duration: 300ms; width: 55%;"><div class="progress" style="color:white">55%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check for Demo</div></div><br>'
 
 var HTMLheaderName = '<h1>%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span>';
 
 var HTMLconnectStart = '<div class="connect-entry ui segments"></div>';
-var HTMLemail = '<p class=" ui segment %color%">%data%</p>';
-var HTMLtwitter = '<p class=" ui segment %color%">%data%</p>';
-var HTMLgithub = '<p class=" ui segment %color%">%data%</p>';
-var HTMLlocation = '<p class=" ui segment %color%">%data%</p>';
+var HTMLemail = '<p class=" ui segment %color%"><i class="mail icon"></i> %data%</p>';
+var HTMLtwitter = '<p class=" ui segment %color%"><i class="twitter icon"></i> %data%</p>';
+var HTMLgithub = '<p class=" ui segment %color%"><i class="github alternate icon"></i> %data% </p>';
+var HTMLlocation = '<p class=" ui segment %color%"><i class="marker icon"></i>%data%</p>';
 
+var HTMLBiosDropdown = '<div id = "biotop" class= "ui basic accordion"></div>';
+var HTMLBios = '<div class= "title"><i class="dropdown icon"></i> Informatıon </div>';
+var HTMLbioContent = '<div id = "biocontent" class= "content"></div>';
+var HTMLbioStart = '<div class="bio-entry"></div>';
 var HTMLbioHome = '<h4>Hometown: %data%</h4>';
 var HTMLbioLiving = '<h4>Living In: %data%</h4>';
 var HTMLbioForeign = '<h4>Foreign Language(s): %data%</h4>';
@@ -31,10 +35,6 @@ var HTMLwelcomeMsg = '<span>%data%</span>';
 
 var HTMLskillsStart = '<h4>Skills at a Glance:</h4>';
 var HTMLskills = '<div style = "margin-top: 14px">%data%</div>';
-//var HTMLskillsStars = '<i class="star yellow icon"></i>';
-
-
-
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<p><a href="#">%data%';
@@ -48,8 +48,6 @@ var HTMLworkPoints = '<p>Internship Overall:<br>%data%</p>';
 var HTMLworkJob = '<p>JobDone:<br>%data%</p>';
 var HTMLworkWeb = '<a href="%data%" target="_blank"><i>WebPage</i></a>';
 
-
-
 var HTMLprojectStart = '<div class="project-entry eight wide column"></div>';
 var HTMLprojectTitle = '<p><a href="#">%data%</a></p>';
 var HTMLprojectDates = '<p>Dates: %data%</p>';
@@ -62,12 +60,10 @@ var HTMLprojectLinks = '<p>Links: %data%</p>';
 var HTMLprojectType = '<p>Type: %data%</p>';
 var HTMLprojectImage = '<p>Image: %data%</p><br>';
 
-
-var HTMLSchoolsDropdown = '<div id = "acordiontop" class= "ui basic accordion"></div>';
-var HTMLSchools = '<div class= "title">Schools: </div>';
-var HTMLSchoolsactive = '<div class= "title active">Schools: </div>';
-var HTMLschoolStart = '<div class="education-entry content"></div>';
-var HTMLschoolStartactive = '<div class="education-entry content active"></div>';
+var HTMLSchoolsDropdown = '<div id = "schooltop" class= "ui basic accordion"></div>';
+var HTMLSchools = '<div class= "title active"><i class="dropdown icon"></i> Schools </div>';
+var HTMLschoolContent = '<div id = "schoolcontent" class= "content active"></div>';
+var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = '<a href="#"> -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
@@ -75,10 +71,10 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em> Major: %data%</em>';
 var HTMLschoolCurriculum= '<a href="%data%" target="_blank"><i>Curriculum</i></a>';
 
-
-
+var HTMLOnlinesDropdown = '<div id = "onlinetop" class= "ui basic accordion"></div>';
+var HTMLOnlines = '<div class= "title"><i class="dropdown icon"></i> Online Courses </div>';
+var HTMLonlineContent = '<div id = "onlinecontent" class= "content"></div>';
 var HTMLonlineStart = '<div class="education-entry"></div>';
-var HTMLonlineClasses = '<h4>Online Classes: </h4>';
 var HTMLonlineTitle = '<a href="#">%data%</a>';
 var HTMLonlineAuthor = '<p> Author: <a href="#">%data%</a></p>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
@@ -86,9 +82,10 @@ var HTMLonlineSkills = '<p>Skills: %data%</p>';
 var HTMLonlineURL = '<a href="#">%data%</a>';
 var HTMLonlineLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
-
+var HTMLSeminarsDropdown = '<div id = "seminartop" class= "ui basic accordion"></div>';
+var HTMLSeminars = '<div class= "title"> <i class="dropdown icon"></i> Seminars </div>';
+var HTMLseminarContent = '<div id = "seminarcontent" class= "content"></div>';
 var HTMLseminarStart = '<div class="education-entry"></div>';
-var HTMLSeminar = '<h4>Seminars: </h4>';
 var HTMLseminarPlaces = '<div class="location-text">%data%</div>';
 var HTMLseminarTitle = '<p>%data%</p>';
 var HTMLseminarGuest = '<a href="#">%data%';
@@ -96,8 +93,10 @@ var HTMLseminarDates = '<div class="date-text">%data%</div>';
 var HTMLseminarGTitle = '-- %data%</a>';
 var HTMLseminarLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
+var HTMLActivityDropdown = '<div id = "activitytop" class= "ui basic accordion"></div>';
+var HTMLActivity = '<div class= "title"> <i class="dropdown icon"></i> Activities </div>';
+var HTMLactivityContent = '<div id = "activitycontent" class= "content"></div>';
 var HTMLactivityStart = '<div class="education-entry"></div>';
-var HTMLActivity = '<h4>Activities: </h4>';
 var HTMLactivityPlaces = '<div class="location-text">%data%</div>';
 var HTMLactivityTitle = '<p>%data%</p>';
 var HTMLactivityDates = '<a href="#">%data%';
@@ -108,11 +107,8 @@ var HTMLactivityCertificate = '<p>%data%</p>';
 var HTMLactivityFiles = '<p>%data%</p>';
 var HTMLactivityLinks = '<p>%data%</p>';
 
-
-
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
-
 
 /*
 The Internationalize Names challenge found in the lesson Flow Control from JavaScript Basics requires you to create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
