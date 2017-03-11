@@ -381,9 +381,9 @@ counter = 0;
 educations.display = function() {
 	// body...
 
-	$("#education").append(HTMLSchoolsDropdown);
-	$("#schooltop").append(HTMLSchools);
-	$("#schooltop").append(HTMLschoolContent);	
+	$("#education").append(HTMLDropdown);
+	$("#accordiontop").append(HTMLSchools);
+	$("#accordiontop").append(HTMLschoolContent);	
 	
 	for (school in educations.schools){
 		//create a new div for projects
@@ -417,9 +417,9 @@ educations.display = function() {
 	
 	$(".education-entry:last").append("<br><br><br>");
 
-	$("#education").append(HTMLOnlinesDropdown);
-	$("#onlinetop").append(HTMLOnlines);
-	$("#onlinetop").append(HTMLonlineContent);	
+	$("#education").append(HTMLDropdown);
+	$("#accordiontop").append(HTMLOnlines);
+	$("#accordiontop").append(HTMLonlineContent);	
 
 	for (onlinecourse in educations.onlinecourses){
 		//create a new div for projects
@@ -454,9 +454,9 @@ educations.display = function() {
 
 	$(".education-entry:last").append("<br><br><br>");
 
-	$("#education").append(HTMLSeminarsDropdown);
-	$("#seminartop").append(HTMLSeminars);
-	$("#seminartop").append(HTMLseminarContent);	
+	$("#education").append(HTMLDropdown);
+	$("#accordiontop").append(HTMLSeminars);
+	$("#accordiontop").append(HTMLseminarContent);	
 
 	for (seminar in educations.seminars){
 		//create a new div for projects
@@ -490,9 +490,9 @@ educations.display = function() {
 
 	$(".education-entry:last").append("<br><br><br>");
 
-	$("#education").append(HTMLActivityDropdown);
-	$("#activitytop").append(HTMLActivity);
-	$("#activitytop").append(HTMLactivityContent);
+	$("#education").append(HTMLDropdown);
+	$("#accordiontop").append(HTMLActivity);
+	$("#accordiontop").append(HTMLactivityContent);
 
 	for (activity in educations.activities){
 		//create a new div for projects
