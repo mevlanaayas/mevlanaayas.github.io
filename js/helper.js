@@ -36,6 +36,7 @@ var HTMLbioForeign = '<h4>Foreign Language(s): %data%</h4>';
 var HTMLbioPic = '<img src="%data%">';
 var HTMLwelcomeMsg = '<span>%data%</span>';
 
+
 var HTMLskillsStart = '<h4>Skills at a Glance:</h4>';
 var HTMLskills = '<div style = "margin-top: 14px">%data%</div>';
 
