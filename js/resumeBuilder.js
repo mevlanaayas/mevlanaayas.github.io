@@ -4,7 +4,6 @@ This is empty on purpose! Your code to build the resume will go here.
  */
 var contactlinecolor = "purple";
 var counter = 0;
-$("#mapDiv").append(googleMap);
 
 var communication = {
 	"email" : "mevlanaayas@gmail.com",
