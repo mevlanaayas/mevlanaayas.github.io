@@ -5,6 +5,20 @@ This is empty on purpose! Your code to build the resume will go here.
 var contactlinecolor = "purple";
 var counter = 0;
 
+var life_story = {
+	"born" : "",
+	"after-born" : "",
+	"beginning" : "",
+	"growing" : "",
+	"still-growing" : "",
+	"almost" : "",
+}
+
+
+
+
+
+
 var communication = {
 	"email" : "mevlanaayas@gmail.com",
 	"github" : "github.com/mevlanaayas",
@@ -22,13 +36,14 @@ var communication = {
 	"image": "images/img.jpg",
 	"welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
 	"skills": {
-		"C": 4,
+		"C": 5,
 		"Java": 3,
-		"JavaScript": 4,
-		"HTML/CSS": 4,
-		"Python": 2,
-		"Reliability": 5,
-		"MicrosoftSQL": 3
+		"JavaScript": 3,
+		"HTML/CSS": 6,
+		"Python": 3,
+		"Reliability": 10,
+		"MicrosoftSQL": 3,
+		"Django" : 4,
 	}
 };
 
@@ -194,7 +209,7 @@ var projects = {
 		"img" : "none"
 	},
 	{
-		"title":"Threads",
+		"title":"Thread Implementation",
 		"dates":"11/2015-12/2015",
 		"describtion":"Implementation of threads that  are already working in our computers. Project was written on Linux operating system like previous bash project.",
 		"skills" : "C Programming, Operating Systems",
@@ -205,7 +220,7 @@ var projects = {
 		"img" : "none"
 	},
 	{
-		"title":"SQL",
+		"title":"The Green Hornet",
 		"dates":"09/2016-12/2016",
 		"describtion":"Implementation of Sample database and MicrosoftSQL for the chosen company. The database was created and Some advanced SQL properties were used.",
 		"skills" : "Microsoft SQL, Java Programming",
@@ -216,7 +231,7 @@ var projects = {
 		"img" : "none"
 	},
 	{
-		"title":"CPU",
+		"title":"CPU Design",
 		"dates":"09/2016-12/2016",
 		"describtion":"CPU and Storage design with Logism. CPU that do eleven operations and produce signals. Storage sotres data.",
 		"skills" : "Logism, Logic Design",

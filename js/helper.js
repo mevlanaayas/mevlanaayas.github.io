@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data%, %title%, %color% or %something% placeholder text you see in them.
 */
 
-var HTMLunderCreation = '<div class="ui progress warning large"><div class="bar green" style="transition-duration: 300ms; width: 55%;"><div class="progress" style="color:white">55%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check for Demo</div></div><br>'
+var HTMLunderCreation = '<div class="ui progress orange large"><div class="bar green" style="transition-duration: 300ms; width: 60%;"><div class="progress" style="color:white">60%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check Demo</div></div><br>'
 
 
 
@@ -27,22 +27,22 @@ var HTMLgithub = '<p class=" ui segment %color%"><i class="github alternate icon
 var HTMLlocation = '<p class=" ui segment %color%"><i class="marker icon"></i>%data%</p>';
 
 var HTMLBiosDropdown = '<div id = "biotop" class= "ui basic accordion"></div>';
-var HTMLBios = '<div class= "title"><i class="dropdown icon"></i> Informatıon </div>';
+var HTMLBios = '<div class= "title" style = "font-size: 20px;"><i class="dropdown icon"></i> Informatıon </div>';
 var HTMLbioContent = '<div id = "biocontent" class= "content"></div>';
 var HTMLbioStart = '<div class="bio-entry"></div>';
-var HTMLbioHome = '<h4>Hometown: %data%</h4>';
-var HTMLbioLiving = '<h4>Living In: %data%</h4>';
-var HTMLbioForeign = '<h4>Foreign Language(s): %data%</h4>';
+var HTMLbioHome = '<p>Hometown: %data%</p>';
+var HTMLbioLiving = '<hp>Living In: %data%</p>';
+var HTMLbioForeign = '<hp>Foreign Language(s): %data%</p>';
 var HTMLbioPic = '<img src="%data%">';
 var HTMLwelcomeMsg = '<span>%data%</span>';
 
 
-var HTMLskillsStart = '<h4>Skills at a Glance:</h4>';
+var HTMLskillsStart = '<h4>Skills at a Glance: (Over Ten Stars)</h4>';
 var HTMLskills = '<div style = "margin-top: 14px">%data%</div>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<p><a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a></p>';
+var HTMLworkEmployer = '<div class = "top-title">%data%';
+var HTMLworkTitle = '   %data%</div>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p>Desc:<br>%data%</p>';
@@ -53,7 +53,7 @@ var HTMLworkJob = '<p>JobDone:<br>%data%</p>';
 var HTMLworkWeb = '<a href="%data%" target="_blank"><i>WebPage</i></a>';
 
 var HTMLprojectStart = '<div class="project-entry eight wide column"></div>';
-var HTMLprojectTitle = '<p><a href="#">%data%</a></p>';
+var HTMLprojectTitle = '<div class = "top-title">%data%</div>';
 var HTMLprojectDates = '<p>Dates: %data%</p>';
 var HTMLprojectDescription = '<p>Description: %data%</p>';
 var HTMLprojectSkills = '<p>Skill(s): %data%</p>';
@@ -67,44 +67,44 @@ var HTMLprojectImage = '<p>Image: %data%</p><br>';
 var HTMLDropdown = '<div id = "accordiontop" class= "ui basic accordion"></div>';
 
 
-var HTMLSchools = '<div class= "title active"><i class="dropdown icon"></i> Schools </div>';
+var HTMLSchools = '<div class= "title active" style = "font-size: 20px;"><i class="dropdown icon"></i> Schools </div>';
 var HTMLschoolContent = '<div id = "schoolcontent" class= "content active"></div>';
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = '<a href="#"> -- %data%</a>';
+var HTMLschoolName = '<div class = "top-title">%data%';
+var HTMLschoolDegree = '   %data%</div>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em> Major: %data%</em>';
 var HTMLschoolCurriculum= '<a href="%data%" target="_blank"><i>Curriculum</i></a>';
 
-var HTMLOnlines = '<div class= "title"><i class="dropdown icon"></i> Online Courses </div>';
+var HTMLOnlines = '<div class= "title" style = "font-size: 20px;"><i class="dropdown icon"></i> Online Courses </div>';
 var HTMLonlineContent = '<div id = "onlinecontent" class= "content"></div>';
 var HTMLonlineStart = '<div class="education-entry"></div>';
-var HTMLonlineTitle = '<a href="#">%data%</a>';
-var HTMLonlineAuthor = '<p> Author: <a href="#">%data%</a></p>';
+var HTMLonlineTitle = '<div class = "top-title">%data%</div>';
+var HTMLonlineAuthor = '<p> Author: %data%</p>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineSkills = '<p>Skills: %data%</p>';
 var HTMLonlineURL = '<a href="#">%data%</a>';
 var HTMLonlineLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
-var HTMLSeminars = '<div class= "title"> <i class="dropdown icon"></i> Seminars </div>';
+var HTMLSeminars = '<div class= "title" style = "font-size: 20px;"> <i class="dropdown icon"></i> Seminars </div>';
 var HTMLseminarContent = '<div id = "seminarcontent" class= "content"></div>';
 var HTMLseminarStart = '<div class="education-entry"></div>';
 var HTMLseminarPlaces = '<div class="location-text">%data%</div>';
 var HTMLseminarTitle = '<p>%data%</p>';
-var HTMLseminarGuest = '<a href="#">%data%';
+var HTMLseminarGuest = '<div class = "top-title">%data%';
 var HTMLseminarDates = '<div class="date-text">%data%</div>';
-var HTMLseminarGTitle = '-- %data%</a>';
+var HTMLseminarGTitle = '   %data%</div>';
 var HTMLseminarLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
-var HTMLActivity = '<div class= "title"> <i class="dropdown icon"></i> Activities </div>';
+var HTMLActivity = '<div class= "title" style = "font-size: 20px;"> <i class="dropdown icon"></i> Activities </div>';
 var HTMLactivityContent = '<div id = "activitycontent" class= "content"></div>';
 var HTMLactivityStart = '<div class="education-entry"></div>';
 var HTMLactivityPlaces = '<div class="location-text">%data%</div>';
-var HTMLactivityTitle = '<p>%data%</p>';
-var HTMLactivityDates = '<a href="#">%data%';
+var HTMLactivityTitle = '<div class = "top-title">%data%</div>';
+var HTMLactivityDates = '<p class = "date-text">%data%</p>';
 var HTMLactivityDays = '<div class="date-text">%data%</div>';
-var HTMLactivitySkills = '-- %data%</a>';
+var HTMLactivitySkills = '<p>%data%</p>';
 var HTMLactivityLearnings = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 var HTMLactivityCertificate = '<p>%data%</p>';
 var HTMLactivityFiles = '<p>%data%</p>';
