@@ -1,4 +1,6 @@
-
+#pp{
+  transform: rotate(90deg);
+}
 
 #map {
   display: block;
@@ -17,4 +19,16 @@
 	font-size: 25px;
 	margin-bottom: 25px;
 	margin-top: 25px;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #B962B6;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.date-text {
+  float: right;
 }
