@@ -15,10 +15,6 @@ var life_story = {
 }
 
 
-
-
-
-
 var communication = {
 	"email" : "mevlanaayas@gmail.com",
 	"github" : "github.com/mevlanaayas",
@@ -37,14 +33,15 @@ var communication = {
 	"driverlicense" : "None",
 	"welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
 	"skills": {
-		"C": 5,
+		"C": 3,
 		"Java": 3,
 		"JavaScript": 3,
-		"HTML/CSS": 6,
-		"Python": 3,
+		"VueJS": 5,
+		"HTML/CSS": 5,
+		"Python": 5,
 		"Reliability": 10,
 		"MicrosoftSQL": 3,
-		"Django" : 4,
+		"Django" : 5,
 	}
 };
 
@@ -136,13 +133,93 @@ var work = {
 		"skills" : "HTML/CSS-JavaScript",
 		"points" : "4.7 over 5 according to Internship report",
 		"jobdone" : "Have Worked on Official Web Site",
-		"website" : "http://www.v-bap.com/vbap2/"
+		"website" : "http://www.v-bap.com/vbap2/",
+		"source" : "Not yet"
+	},
+	{
+			"employer":"SEKOM",
+			"location":"Istanbul/Turkey",
+			"title":"Intern",
+			"dates":"June 2017 - July 2017",
+			"describtion":"I had an internship at Sekom Yazılım.",
+			"detail" : "I worked on application is called Out Of Office Manager that control and manage employee leave date. Come again after little time for more detail.",
+			"skills" : "Django/Python/VueJS",
+			"points" : "Not Graded, yet",
+			"jobdone" : "Personal management Fullstack web application",
+			"website" : "https://www.sekom.com.tr/tr/",
+			"source" : "Not yet"
 	}
 	]
 }
 
 var projects = {
 	"myprojects" : [
+	{
+		"title":"Django Teams",
+		"dates":"July 2017 - Still in Development",
+		"describtion":"Django-teams is simple implementation of user-role-team-permission network.",
+		"skills" : "Django / Python",
+		"members" : 1,
+		"files" : "https://github.com/mevlanaayas/django-teams",
+		"links" : "https://github.com/mevlanaayas/django-teams",
+		"type" : "Open Source - Python Library",
+		"img" : "none"
+	},
+	{
+		"title":"Django Base",
+		"dates":"July 2017 - Still in Development",
+		"describtion":"Django creation tool for Models, Views, Rest particles and basic contents. Front-end support with VueJS",
+		"skills" : "Django / Python / VueJS",
+		"members" : 1,
+		"files" : "none",
+		"links" : "none",
+		"type" : "Open Source - Django Project basic content creation Tools",
+		"img" : "none"
+	},
+	{
+		"title":"Portfolio Website",
+		"dates":"March 2017 - Still in Development",
+		"describtion":"Portfolio Website to show job done by Mevlana.",
+		"skills" : "Javascript / SemanticUI / CSS / HTML",
+		"members" : 1,
+		"files" : "https://github.com/mevlanaayas/mevlanaayas.github.io",
+		"links" : "https://mevlanaayas.github.io",
+		"type" : "Personal Development - Portfolio Website",
+		"img" : "none"
+	},
+	{
+		"title":"Hare And Hound Strategy Game",
+		"dates":"February 2016 - May 2016",
+		"describtion":"Implementation of Hare and Hounds game tha is playing on command line in our project. Project was developed with Assembly programming language",
+		"skills" : "Assembly Programming",
+		"members" : 1,
+		"files" : "none",
+		"links" : "none",
+		"type" : "Term Project",
+		"img" : "none"
+	},
+	{
+		"title":"Bricker Puzzle Game",
+		"dates":"September 2016 - October 2016",
+		"describtion":"Implementation of Bricker game tha is playing on command line in our project. Project is typpe of OOP software and it was written with Java programming language ",
+		"skills" : "Java Programming, Object Oriented Programming",
+		"members" : 1,
+		"files" : "none",
+		"links" : "none",
+		"type" : "Term Project",
+		"img" : "none"
+	},
+	{
+		"title":"The Green Hornet",
+		"dates":"September 2016 - December 2016",
+		"describtion":"Implementation of Sample database and MicrosoftSQL for the chosen company. The database was created and Some advanced SQL properties were used.",
+		"skills" : "Microsoft SQL, Java Programming",
+		"members" : 2,
+		"files" : "none",
+		"links" : "none",
+		"type" : "Term Project",
+		"img" : "none"
+	},
 	{
 		"title":"Binary Multiplication",
 		"dates":"September 2015 - October 2015",
@@ -178,44 +255,11 @@ var projects = {
 		"img" : "none"
 	},
 	{
-		"title":"Hare And Hound Strategy Game",
-		"dates":"February 2016 - May 2016",
-		"describtion":"Implementation of Hare and Hounds game tha is playing on command line in our project. Project was developed with Assembly programming language",
-		"skills" : "Assembly Programming",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
-		"title":"Bricker Puzzle Game",
-		"dates":"September 2016 - October 2016",
-		"describtion":"Implementation of Bricker game tha is playing on command line in our project. Project is typpe of OOP software and it was written with Java programming language ",
-		"skills" : "Java Programming, Object Oriented Programming",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
 		"title":"Linux Bash Replication",
 		"dates":"October 2015 - November 2015",
 		"describtion":"Implementation of Linux bash that do exactly same operations like original bash. Project was written by using C programming language and icnlude some advanced data structure",
 		"skills" : "C Programming, Shell Programming, Programming on UNIX",
 		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
-		"title":"The Green Hornet",
-		"dates":"September 2016 - December 2016",
-		"describtion":"Implementation of Sample database and MicrosoftSQL for the chosen company. The database was created and Some advanced SQL properties were used.",
-		"skills" : "Microsoft SQL, Java Programming",
-		"members" : 2,
 		"files" : "none",
 		"links" : "none",
 		"type" : "Term Project",
@@ -322,12 +366,14 @@ work.display = function() {
 		var formattedpoints = HTMLworkPoints.replace("%data%", work.jobs[job].points);
 		var formattedjobdone = HTMLworkJob.replace("%data%", work.jobs[job].jobdone);
 		var formattedworkWeb = HTMLworkWeb.replace("%data%", work.jobs[job].website);
+		var formattedworkSource = HTMLworkSource.replace("%data%", work.jobs[job].source);
 
 		$(".work-entry:last").append(formatteddetail);
 		$(".work-entry:last").append(formattedworkskill);
 		$(".work-entry:last").append(formattedpoints);
 		$(".work-entry:last").append(formattedjobdone);
 		$(".work-entry:last").append(formattedworkWeb);
+		$(".work-entry:last").append(formattedworkSource);
 
 		counter++;
 	}
@@ -351,13 +397,18 @@ projects.display = function() {
 		}else{
 			var formattedprojectMember = HTMLprojectMember.replace("%data%", projects.myprojects[project].members);
 		}
+		if(projects.myprojects[project].files==="none"){
+			HTMLprojectFiles = '<p>Files: %data%</p>';
+		}
+		if(projects.myprojects[project].links==="none"){
+			HTMLprojectLinks = '<p>Links: %data%</p>';
+		}
 		var formattedprojectFiles = HTMLprojectFiles.replace("%data%", projects.myprojects[project].files);
 		var formattedprojectLinks = HTMLprojectLinks.replace("%data%", projects.myprojects[project].links);
 		var formattedprojectType = HTMLprojectType.replace("%data%", projects.myprojects[project].type);
 		var formattedprojectImage = HTMLprojectImage.replace("%data%", projects.myprojects[project].img);
 
-
-		if(counter > 1){
+		if(counter > 0){
 			$(".project-entry:last").append("<hr>");
 		}
 

@@ -51,6 +51,7 @@ var HTMLworkSkill = '<p>Worked On:<ul>%data%</ul></p>';
 var HTMLworkPoints = '<p>Internship Overall: %data%</p>';
 var HTMLworkJob = '<p>JobDone:<ul>%data%</ul></p>';
 var HTMLworkWeb = '<p>Official web site: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a>';
+var HTMLworkSource = '<p>Source Code: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a>';
 
 var HTMLprojectStart = '<div class="project-entry eight wide column"></div>';
 var HTMLprojectTitle = '<div class = "top-title">%data%</div>';
@@ -59,8 +60,8 @@ var HTMLprojectDescription = '<p>Description: %data%</p>';
 var HTMLprojectSkills = '<p>Skill(s): %data%</p>';
 var HTMLprojectMember = '<p>Member: %data% <i class="user icon"></i></p>';
 var HTMLprojectMembers = '<p>Members: %data% <i class="users icon"></i></p>';
-var HTMLprojectFiles = '<p>Files: %data%</p>';
-var HTMLprojectLinks = '<p>Links: %data%</p>';
+var HTMLprojectFiles = '<p>Files: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a></p>';
+var HTMLprojectLinks = '<p>Links: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a></p>';
 var HTMLprojectType = '<p>Type: %data%</p>';
 var HTMLprojectImage = '<p>Image: %data%</p><br>';
 
