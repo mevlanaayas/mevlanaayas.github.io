@@ -35,13 +35,12 @@ var communication = {
 	"skills": {
 		"C": 3,
 		"Java": 3,
-		"JavaScript": 3,
+		"JavaScript": 5,
 		"VueJS": 5,
 		"HTML/CSS": 5,
-		"Python": 5,
+		"Python": 6,
 		"Reliability": 10,
-		"MicrosoftSQL": 3,
-		"Django" : 5,
+		"Django" : 6,
 	}
 };
 
@@ -146,6 +145,19 @@ var work = {
 			"skills" : "Django/Python/VueJS",
 			"points" : "Not Graded, yet",
 			"jobdone" : "Personal management Fullstack web application",
+			"website" : "https://www.sekom.com.tr/tr/",
+			"source" : "Not yet"
+	},
+			{
+			"employer":"SEKOM",
+			"location":"Istanbul/Turkey",
+			"title":"Junior Software Developer",
+			"dates":"October 2017 - Present",
+			"describtion":"",
+			"detail" : "",
+			"skills" : "Django/Python/Java/Spring",
+			"points" : "Not Graded, yet",
+			"jobdone" : "",
 			"website" : "https://www.sekom.com.tr/tr/",
 			"source" : "Not yet"
 	}
