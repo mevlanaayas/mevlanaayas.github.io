@@ -151,7 +151,7 @@ var work = {
 			{
 			"employer":"SEKOM",
 			"location":"Istanbul/Turkey",
-			"title":"Junior Software Developer",
+			"title":"Part Time Software Developer",
 			"dates":"October 2017 - Present",
 			"describtion":"",
 			"detail" : "",
