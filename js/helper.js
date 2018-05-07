@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data%, %title%, %color% or %something% placeholder text you see in them.
 */
 
-var HTMLunderCreation = '<div class="ui progress orange large"><div class="bar green" style="transition-duration: 300ms; width: 65%;"><div class="progress" style="color:white">65%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check Demo</div></div><br>'
+var HTMLunderCreation = '<div class="ui progress yellow large"><div class="bar green" style="transition-duration: 300ms; width: 80%;"><div class="progress" style="color:white">80%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check Demo</div></div><br>'
 
 
 
@@ -48,7 +48,7 @@ var HTMLworkLocation = '<p class="location-text">Location :<ul>%data%</ul></p>';
 var HTMLworkDescription = '<p>Description:<ul>%data%</ul></p>';
 var HTMLworkDetail = '<p>Some Detail:<ul>%data%</ul></p>';
 var HTMLworkSkill = '<p>Worked On:<ul>%data%</ul></p>';
-var HTMLworkPoints = '<p>Internship Overall: %data%</p>';
+var HTMLworkPoints = '<p>Overall: %data%</p>';
 var HTMLworkJob = '<p>JobDone:<ul>%data%</ul></p>';
 var HTMLworkWeb = '<p>Official web site: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a>';
 var HTMLworkSource = '<p>Source Code: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a>';
@@ -92,11 +92,11 @@ var HTMLonlineLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 var HTMLSeminars = '<div class= "title" style = "font-size: 20px;"> <i class="dropdown icon"></i> Seminars </div>';
 var HTMLseminarContent = '<div id = "seminarcontent" class= "content"></div>';
 var HTMLseminarStart = '<div class="education-entry"></div>';
-var HTMLseminarPlaces = '<div class="location-text">%data%</div>';
-var HTMLseminarTitle = '<p>%data%</p>';
-var HTMLseminarGuest = '<div class = "top-title">%data%';
-var HTMLseminarDates = '<div class="date-text">%data%</div>';
-var HTMLseminarGTitle = '   %data%</div>';
+var HTMLseminarPlaces = '<div class="location-text">Place: %data%</div>';
+var HTMLseminarTitle = '<p>Topic: %data%</p>';
+var HTMLseminarGuest = '<div class = "top-title">Guest: %data%';
+var HTMLseminarDates = '<div class="date-text">Date: %data%</div>';
+var HTMLseminarGTitle = '<div class="title-text">Guest title: %data%</div>';
 var HTMLseminarLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
 

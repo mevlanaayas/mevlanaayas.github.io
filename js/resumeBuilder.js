@@ -34,13 +34,14 @@ var communication = {
 	"welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
 	"skills": {
 		"C": 3,
-		"Java": 3,
+		"Java": 4,
 		"JavaScript": 5,
 		"VueJS": 5,
 		"HTML/CSS": 5,
 		"Python": 6,
 		"Reliability": 10,
-		"Django" : 6,
+		"Django": 6,
+		"Spring": 4
 	}
 };
 
@@ -79,23 +80,56 @@ var educations = {
 		"learnings": "none"
 	}],
 	"seminars": [{
-		"title": "none",
-		"place": "none",
-		"guest": "none",
-		"dates": "none",
-		"guesttitle": "none",
-		"learnings": "none"
+		"title": "Bilişim Erişilebilirliği",
+		"place": "Marmara University",
+		"guest": "Hasan ÖZDEMİR",
+		"dates": "20.10.2017",
+		"guesttitle": "Software Development Lead & Accessibility Consultant at Microsoft",
+		"learnings": "There is always a way to help people by using computer science." +
+		" The important thing is to find out where it is."
 
 	}, {
-		"title": "none",
-		"place": "none",
-		"guest": "none",
-		"dates": "none",
-		"guesttitle": "none",
-		"learnings": "none"
+		"title": "Yazılım Geliştirme Süreçlerinde Sürdürülebilirlik",
+		"place": "Marmara University",
+		"guest": "Doç. Dr. Borahan Tümer",
+		"dates": "17.11.2017",
+		"guesttitle": "Academician at Marmara University",
+		"learnings": ""
+	}, {
+		"title": "Sürdürülebilir Kalkınma İçin Bilişim",
+		"place": "Marmara University",
+		"guest": "Dursun Baş",
+		"dates": "24.11.2017",
+		"guesttitle": "Bölgesel Çevre Merkezi",
+		"learnings": "There are lots of example for applying computer science to environment. " +
+		"It gives us opportunity about ease of use, reusability and maintainability"
+	}, {
+		"title": "Blokzincir ve Uygulamaları",
+		"place": "Marmara University",
+		"guest": "Özer Koray Akdemir",
+		"dates": "23.02.2018",
+		"guesttitle": "TÜBİTAK BİLGEM, Blokzincir Araştırma Laboratuvarında Baş Araştırmacı",
+		"learnings": "In my opinion, blockchain gives us an opportunity about safe or stable data" +
+		"but the space requirement is too high. You need to place data to all computer around the world."
+	},{
+		"title": "5G ve Dikey Teknolojiler",
+		"place": "Marmara University",
+		"guest": "Doç Dr. Müjdat Soytürk",
+		"dates": "02.03.2018",
+		"guesttitle": "Marmara Üniversitesi Öğretim Üyesi",
+		"learnings": "There are so much learnings. Comming soon."
 
 
-	}],
+	}, {
+        "title": "none",
+        "place": "none",
+        "guest": "none",
+        "dates": "none",
+        "guesttitle": "none",
+        "learnings": "none"
+
+
+    }],
 	"activities": [{
 		"title": "Web programming with Python/Django",
 		"place": "Bolu/Turkey",
@@ -154,7 +188,8 @@ var work = {
 			"title":"Part Time Software Developer",
 			"dates":"October 2017 - Present",
 			"describtion":"",
-			"detail" : "",
+			"detail" : "I am working as a backend/middleware developer with tools of" +
+			" java and spring, python and django.",
 			"skills" : "Django/Python/Java/Spring",
 			"points" : "Not Graded, yet",
 			"jobdone" : "",
@@ -175,6 +210,19 @@ var projects = {
 		"files" : "https://github.com/mevlanaayas/django-teams",
 		"links" : "https://github.com/mevlanaayas/django-teams",
 		"type" : "Open Source - Python Library",
+		"img" : "none"
+	},
+	{
+		"title":"Django Heroku Documents",
+		"dates":"March 2018 - Still in Development",
+		"describtion":"I try to explain requirements which ara required to install and" +
+		" run your django application on heroku. Inside several repository there" +
+		" are some settings these are specific to heroku.",
+		"skills" : "Django / Python / Heroku",
+		"members" : 1,
+		"files" : "https://github.com/mevlanaayas",
+		"links" : "https://github.com/mevlanaayas",
+		"type" : "Open Source - Documentation",
 		"img" : "none"
 	},
 	{
@@ -233,9 +281,12 @@ var projects = {
 		"img" : "none"
 	},
 	{
-		"title":"Binary Multiplication",
-		"dates":"September 2015 - October 2015",
-		"describtion":"Multiplication of binary numbers by using data structure of linked list. Project extends some sorting algorithm and it was written with C programming language.",
+		"title":"Data Structures Term Projects",
+		"dates":"November 2015 - October 2015",
+		"describtion": "<b>Binary Multiplication:</b> Multiplication of binary numbers by using data structure of linked list." +
+		" <b>4D Tree:</b> Storing lots of personals data by using data structure of Multi dimension trees." +
+		" <b>Priority Queue:</b> Priority queue implementation by using data structure of binomial heap." +
+		" Projects extend some sorting algorithm and they were written with C programming language.",
 		"skills" : "C Programming, Data Structures",
 		"members" : 1,
 		"files" : "none",
@@ -243,28 +294,6 @@ var projects = {
 		"type" : "Term Project",
 		"img" : "none"
 
-	},
-	{
-		"title":"4D Tree",
-		"dates":"October 2015 - November 2015",
-		"describtion":"Storing lots of personals data by using data structure of Multi dimension trees. Project extends some sorting algorithm and it was written with C programming language.",
-		"skills" : "C Programming, Data Structures",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
-		"title":"Priority Queue",
-		"dates":"November 2015 - December 2015",
-		"describtion":"Priority queue implementation by using data structure of binomial heap. Project extends some sorting algorithm and it was written with C programming language.",
-		"skills" : "C Programming, Data Structures",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
 	},
 	{
 		"title":"Linux Bash Replication",
@@ -280,7 +309,8 @@ var projects = {
 	{
 		"title":"CPU Design",
 		"dates":"September 2016 - December 2016",
-		"describtion":"CPU and Storage design with Logism. CPU that do eleven operations and produce signals. Storage stores data.",
+		"describtion":"It has also Verilog part. CPU and Storage design with Logism. " +
+		"CPU that do eleven operations and produce signals. Storage stores data. Interrupts added",
 		"skills" : "Logism, Logic Design",
 		"members" : 3,
 		"files" : "none",
@@ -288,7 +318,6 @@ var projects = {
 		"type" : "Term Project",
 		"img" : "none"
 	}
-
 	]
 }
 
@@ -554,7 +583,9 @@ educations.display = function() {
 			}
 
 
-			$(".education-entry:last").append(formattedseminarAuthor + " " + formattedseminarGTitle);
+			$(".education-entry:last").append(formattedseminarAuthor);
+
+			$(".education-entry:last").append(formattedseminarGTitle);
 
 			$(".education-entry:last").append(formattedseminarTitle);
 
