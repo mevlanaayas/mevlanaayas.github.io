@@ -1,7 +1,4 @@
 
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
 var contactlinecolor = "purple";
 var counter = 0;
 
@@ -72,13 +69,22 @@ var educations = {
 
 	],
 	"onlinecourses": [{
-		"title": "none",
-		"author": "Udacity",
+		"title": "SEO Training Course by Moz",
+		"author": "Moz moz.com",
 		"dates": "2017",
 		"skills": "none",
-		"url": "udacity.com",
-		"learnings": "none"
-	}],
+		"url": "https://www.udemy.com/whiteboard-seo/",
+		"learnings": "none",
+		"certificate": "https://www.udemy.com/certificate/UC-R0NXNKNF/"
+	},{
+        "title": "none",
+        "author": "Udacity",
+        "dates": "2017",
+        "skills": "none",
+        "url": "udacity.com",
+        "learnings": "none"
+    }
+	],
 	"seminars": [{
 		"title": "Bilişim Erişilebilirliği",
 		"place": "Marmara University",
@@ -156,20 +162,20 @@ var educations = {
 
 var work = {
 	"jobs" : [
-	{
-		"employer":"VB-AP",
-		"location":"Bursa/Turkey",
-		"title":"Intern",
-		"dates":"June 2016 - September 2016",
-		"describtion":"I had an internship at VB-AP that works on ERP and SAP.",
-		"detail" : "Here, there is no detail about my Internship adventure.",
-		"skills" : "HTML/CSS-JavaScript",
-		"points" : "4.7 over 5 according to Internship report",
-		"jobdone" : "Have Worked on Official Web Site",
-		"website" : "http://www.v-bap.com/vbap2/",
-		"source" : "Not yet"
-	},
-	{
+		{
+			"employer":"VB-AP",
+			"location":"Bursa/Turkey",
+			"title":"Intern",
+			"dates":"June 2016 - September 2016",
+			"describtion":"I had an internship at VB-AP that works on ERP and SAP.",
+			"detail" : "Here, there is no detail about my Internship adventure.",
+			"skills" : "HTML/CSS-JavaScript",
+			"points" : "4.7 over 5 according to Internship report",
+			"jobdone" : "Have Worked on Official Web Site",
+			"website" : "http://www.v-bap.com/vbap2/",
+			"source" : "Not yet"
+		},
+		{
 			"employer":"SEKOM",
 			"location":"Istanbul/Turkey",
 			"title":"Intern",
@@ -181,8 +187,8 @@ var work = {
 			"jobdone" : "Personal management Fullstack web application",
 			"website" : "https://www.sekom.com.tr/tr/",
 			"source" : "Not yet"
-	},
-			{
+		},
+		{
 			"employer":"SEKOM",
 			"location":"Istanbul/Turkey",
 			"title":"Part Time Software Developer",
@@ -195,129 +201,129 @@ var work = {
 			"jobdone" : "",
 			"website" : "https://www.sekom.com.tr/tr/",
 			"source" : "Not yet"
-	}
+		}
 	]
 }
 
 var projects = {
 	"myprojects" : [
-	{
-		"title":"Django Teams",
-		"dates":"July 2017 - Still in Development",
-		"describtion":"Django-teams is simple implementation of user-role-team-permission network.",
-		"skills" : "Django / Python",
-		"members" : 1,
-		"files" : "https://github.com/mevlanaayas/django-teams",
-		"links" : "https://github.com/mevlanaayas/django-teams",
-		"type" : "Open Source - Python Library",
-		"img" : "none"
-	},
-	{
-		"title":"Django Heroku Documents",
-		"dates":"March 2018 - Still in Development",
-		"describtion":"I try to explain requirements which ara required to install and" +
-		" run your django application on heroku. Inside several repository there" +
-		" are some settings these are specific to heroku.",
-		"skills" : "Django / Python / Heroku",
-		"members" : 1,
-		"files" : "https://github.com/mevlanaayas",
-		"links" : "https://github.com/mevlanaayas",
-		"type" : "Open Source - Documentation",
-		"img" : "none"
-	},
-	{
-		"title":"Django Base",
-		"dates":"July 2017 - Still in Development",
-		"describtion":"Django creation tool for Models, Views, Rest particles and basic contents. Front-end support with VueJS",
-		"skills" : "Django / Python / VueJS",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Open Source - Django Project basic content creation Tools",
-		"img" : "none"
-	},
-	{
-		"title":"Portfolio Website",
-		"dates":"March 2017 - Still in Development",
-		"describtion":"Portfolio Website to show job done by Mevlana.",
-		"skills" : "Javascript / SemanticUI / CSS / HTML",
-		"members" : 1,
-		"files" : "https://github.com/mevlanaayas/mevlanaayas.github.io",
-		"links" : "https://mevlanaayas.github.io",
-		"type" : "Personal Development - Portfolio Website",
-		"img" : "none"
-	},
-	{
-		"title":"Hare And Hound Strategy Game",
-		"dates":"February 2016 - May 2016",
-		"describtion":"Implementation of Hare and Hounds game tha is playing on command line in our project. Project was developed with Assembly programming language",
-		"skills" : "Assembly Programming",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
-		"title":"Bricker Puzzle Game",
-		"dates":"September 2016 - October 2016",
-		"describtion":"Implementation of Bricker game tha is playing on command line in our project. Project is typpe of OOP software and it was written with Java programming language ",
-		"skills" : "Java Programming, Object Oriented Programming",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
-		"title":"The Green Hornet",
-		"dates":"September 2016 - December 2016",
-		"describtion":"Implementation of Sample database and MicrosoftSQL for the chosen company. The database was created and Some advanced SQL properties were used.",
-		"skills" : "Microsoft SQL, Java Programming",
-		"members" : 2,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
-		"title":"Data Structures Term Projects",
-		"dates":"November 2015 - October 2015",
-		"describtion": "<b>Binary Multiplication:</b> Multiplication of binary numbers by using data structure of linked list." +
-		" <b>4D Tree:</b> Storing lots of personals data by using data structure of Multi dimension trees." +
-		" <b>Priority Queue:</b> Priority queue implementation by using data structure of binomial heap." +
-		" Projects extend some sorting algorithm and they were written with C programming language.",
-		"skills" : "C Programming, Data Structures",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
+		{
+			"title":"Django Teams",
+			"dates":"July 2017 - Still in Development",
+			"describtion":"Django-teams is simple implementation of user-role-team-permission network.",
+			"skills" : "Django / Python",
+			"members" : 1,
+			"files" : "https://github.com/mevlanaayas/django-teams",
+			"links" : "https://github.com/mevlanaayas/django-teams",
+			"type" : "Open Source - Python Library",
+			"img" : "none"
+		},
+		{
+			"title":"Django Heroku Documents",
+			"dates":"March 2018 - Still in Development",
+			"describtion":"I try to explain requirements which ara required to install and" +
+			" run your django application on heroku. Inside several repository there" +
+			" are some settings these are specific to heroku.",
+			"skills" : "Django / Python / Heroku",
+			"members" : 1,
+			"files" : "https://github.com/mevlanaayas",
+			"links" : "https://github.com/mevlanaayas",
+			"type" : "Open Source - Documentation",
+			"img" : "none"
+		},
+		{
+			"title":"Django Base",
+			"dates":"July 2017 - Still in Development",
+			"describtion":"Django creation tool for Models, Views, Rest particles and basic contents. Front-end support with VueJS",
+			"skills" : "Django / Python / VueJS",
+			"members" : 1,
+			"files" : "none",
+			"links" : "none",
+			"type" : "Open Source - Django Project basic content creation Tools",
+			"img" : "none"
+		},
+		{
+			"title":"Portfolio Website",
+			"dates":"March 2017 - Still in Development",
+			"describtion":"Portfolio Website to show job done by Mevlana.",
+			"skills" : "Javascript / SemanticUI / CSS / HTML",
+			"members" : 1,
+			"files" : "https://github.com/mevlanaayas/mevlanaayas.github.io",
+			"links" : "https://mevlanaayas.github.io",
+			"type" : "Personal Development - Portfolio Website",
+			"img" : "none"
+		},
+		{
+			"title":"Hare And Hound Strategy Game",
+			"dates":"February 2016 - May 2016",
+			"describtion":"Implementation of Hare and Hounds game tha is playing on command line in our project. Project was developed with Assembly programming language",
+			"skills" : "Assembly Programming",
+			"members" : 1,
+			"files" : "none",
+			"links" : "none",
+			"type" : "Term Project",
+			"img" : "none"
+		},
+		{
+			"title":"Bricker Puzzle Game",
+			"dates":"September 2016 - October 2016",
+			"describtion":"Implementation of Bricker game tha is playing on command line in our project. Project is typpe of OOP software and it was written with Java programming language ",
+			"skills" : "Java Programming, Object Oriented Programming",
+			"members" : 1,
+			"files" : "none",
+			"links" : "none",
+			"type" : "Term Project",
+			"img" : "none"
+		},
+		{
+			"title":"The Green Hornet",
+			"dates":"September 2016 - December 2016",
+			"describtion":"Implementation of Sample database and MicrosoftSQL for the chosen company. The database was created and Some advanced SQL properties were used.",
+			"skills" : "Microsoft SQL, Java Programming",
+			"members" : 2,
+			"files" : "none",
+			"links" : "none",
+			"type" : "Term Project",
+			"img" : "none"
+		},
+		{
+			"title":"Data Structures Term Projects",
+			"dates":"November 2015 - October 2015",
+			"describtion": "<b>Binary Multiplication:</b> Multiplication of binary numbers by using data structure of linked list." +
+			" <b>4D Tree:</b> Storing lots of personals data by using data structure of Multi dimension trees." +
+			" <b>Priority Queue:</b> Priority queue implementation by using data structure of binomial heap." +
+			" Projects extend some sorting algorithm and they were written with C programming language.",
+			"skills" : "C Programming, Data Structures",
+			"members" : 1,
+			"files" : "none",
+			"links" : "none",
+			"type" : "Term Project",
+			"img" : "none"
 
-	},
-	{
-		"title":"Linux Bash Replication",
-		"dates":"October 2015 - November 2015",
-		"describtion":"Implementation of Linux bash that do exactly same operations like original bash. Project was written by using C programming language and icnlude some advanced data structure",
-		"skills" : "C Programming, Shell Programming, Programming on UNIX",
-		"members" : 1,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	},
-	{
-		"title":"CPU Design",
-		"dates":"September 2016 - December 2016",
-		"describtion":"It has also Verilog part. CPU and Storage design with Logism. " +
-		"CPU that do eleven operations and produce signals. Storage stores data. Interrupts added",
-		"skills" : "Logism, Logic Design",
-		"members" : 3,
-		"files" : "none",
-		"links" : "none",
-		"type" : "Term Project",
-		"img" : "none"
-	}
+		},
+		{
+			"title":"Linux Bash Replication",
+			"dates":"October 2015 - November 2015",
+			"describtion":"Implementation of Linux bash that do exactly same operations like original bash. Project was written by using C programming language and icnlude some advanced data structure",
+			"skills" : "C Programming, Shell Programming, Programming on UNIX",
+			"members" : 1,
+			"files" : "none",
+			"links" : "none",
+			"type" : "Term Project",
+			"img" : "none"
+		},
+		{
+			"title":"CPU Design",
+			"dates":"September 2016 - December 2016",
+			"describtion":"It has also Verilog part. CPU and Storage design with Logism. " +
+			"CPU that do eleven operations and produce signals. Storage stores data. Interrupts added",
+			"skills" : "Logism, Logic Design",
+			"members" : 3,
+			"files" : "none",
+			"links" : "none",
+			"type" : "Term Project",
+			"img" : "none"
+		}
 	]
 }
 
@@ -325,40 +331,40 @@ var projects = {
 $("#creationsection").append(HTMLunderCreation);
 
 function displayBio(argument) {
-	// body...
-var formattedforeign = HTMLbioForeign.replace("%data%", bio.language);
-var formattedHome = HTMLbioHome.replace("%data%", bio.hometown);
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+	var formattedforeign = HTMLbioForeign.replace("%data%", bio.language);
+	var formattedHome = HTMLbioHome.replace("%data%", bio.hometown);
+	var formattedName = HTMLheaderName.replace("%data%", bio.name);
+	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+	var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
 
- $("#nameid").append(formattedName);
- $("#role").append(formattedRole);
- $("#welcomeMssg").append(formattedWelcome);
+	$("#nameid").append(formattedName);
+	$("#role").append(formattedRole);
+	$("#welcomeMssg").append(formattedWelcome);
 
- /*$("#welcomeMssg").append(HTMLBiosDropdown);
- $("#biotop").append(HTMLBios);
- $("#biotop").append(HTMLbioContent);
+	/*
+	$("#welcomeMssg").append(HTMLBiosDropdown);
+	$("#biotop").append(HTMLBios);
+	$("#biotop").append(HTMLbioContent);
 
- $("#biocontent").append(formattedHome);
- $("#biocontent").append(formattedforeign);
-*/
-var formattedimg = HTMLbioPic.replace("%data%", bio.image);
- $("#pp").append(formattedimg);
+	$("#biocontent").append(formattedHome);
+	$("#biocontent").append(formattedforeign);
+	*/
 
-$("#skillsgeneric").append(HTMLskillsStart);
-for(skill in bio.skills){
-	var formattedSkill = HTMLskills.replace("%data%",skill);
-	$("#skillsdiv").append(formattedSkill);
-	for(var i = 0; i<bio.skills[skill];i++){
-		$("#skillsdiv").append('<i class="star yellow icon"></i>');
+	var formattedimg = HTMLbioPic.replace("%data%", bio.image);
+	$("#pp").append(formattedimg);
+
+	$("#skillsgeneric").append(HTMLskillsStart);
+	for(skill in bio.skills){
+		var formattedSkill = HTMLskills.replace("%data%",skill);
+		$("#skillsdiv").append(formattedSkill);
+		for(var i = 0; i<bio.skills[skill];i++){
+			$("#skillsdiv").append('<i class="star yellow icon"></i>');
+		}
 	}
-}
 }
 
 function locationizer(work_obj) {
-	// body...
 	var locationArray = [];
 
 	for(job in work_obj.jobs){
@@ -372,15 +378,13 @@ workLocations = locationizer(work);
 
 
 work.display = function() {
-	// body...
-		for (job in work.jobs) {
+	for (job in work.jobs) {
 		//create a new div for work experience
 		$("#workExperience").append(HTMLworkStart);
 		//cpncat employer and title
 		var formatedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedEmployerTitle = formatedEmployer + " - " + formattedTitle;
-
 
 		if(counter > 0){
 			$(".work-entry:last").append("<hr>");
@@ -421,12 +425,9 @@ work.display = function() {
 }
 
 projects.display = function() {
-	// body...
-
 	for (project in projects.myprojects){
 		//create a new div for projects
 		$("#projects").append(HTMLprojectStart);
-
 
 		var formattedprojectTitle = HTMLprojectTitle.replace("%data%", projects.myprojects[project].title);
 		var formattedprojectDate = HTMLprojectDates.replace("%data%", projects.myprojects[project].dates);
@@ -473,11 +474,9 @@ projects.display = function() {
 
 		counter++;
 	}
-
 }
 counter = 0;
 educations.display = function() {
-	// body...
 
 	$("#education").append(HTMLDropdown);
 	$("#accordiontop").append(HTMLSchools);
@@ -485,9 +484,8 @@ educations.display = function() {
 
 	for (school in educations.schools){
 		//create a new div for projects
-
 		$("#schoolcontent").append(HTMLschoolStart);
-	  var formattededucationTitle = HTMLschoolName.replace("%data%", educations.schools[school].name);
+	    var formattededucationTitle = HTMLschoolName.replace("%data%", educations.schools[school].name);
 		var formattededucationMajor = HTMLschoolMajor.replace("%data%", educations.schools[school].major);
 		var formattededucationDegree = HTMLschoolDegree.replace("%data%", educations.schools[school].degree);
 		var formattededucationLocation = HTMLschoolLocation.replace("%data%", educations.schools[school].city);
@@ -538,7 +536,6 @@ educations.display = function() {
 				$(".education-entry:last").append("<hr>");
 			}
 
-
 			$(".education-entry:last").append(formattedonlineTitle + " - " + formattedonlineAuthor);
 
 			$(".education-entry:last").append(formattedonlineDates);
@@ -554,13 +551,10 @@ educations.display = function() {
 
 	}
 	if(counter !=0){
-
 		$(".education-entry:last").append("<br><br><br>");
 	}
 
 	counter = 0;
-
-
 
 	$("#education").append(HTMLDropdown);
 	$("#accordiontop").append(HTMLSeminars);
@@ -605,7 +599,6 @@ educations.display = function() {
 
 	counter = 0;
 
-
 	$("#education").append(HTMLDropdown);
 	$("#accordiontop").append(HTMLActivity);
 	$("#accordiontop").append(HTMLactivityContent);
@@ -614,7 +607,6 @@ educations.display = function() {
 		//create a new div for projects
 		if(educations.activities[activity].title != 'none'){
 			$("#activitycontent").append(HTMLactivityStart);
-
 
 			var formattedactivityTitle = HTMLactivityTitle.replace("%data%", educations.activities[activity].title);
 			var formattedactivityDates = HTMLactivityDates.replace("%data%", educations.activities[activity].dates);
@@ -628,7 +620,6 @@ educations.display = function() {
 				$(".education-entry:last").append("<hr>");
 			}
 
-
 			$(".education-entry:last").append(formattedactivityTitle);
 
 			$(".education-entry:last").append(formattedactivityDates + " - " + formattedactivityHours);
@@ -640,7 +631,6 @@ educations.display = function() {
 				$(".education-entry:last").append(formattedactivitySkills);
 			}
 
-
 			$(".education-entry:last").append(formattedactivityLearning);
 
 			$(".education-entry:last").append(formattedactivityCertificate);
@@ -648,9 +638,6 @@ educations.display = function() {
 			$(".education-entry:last").append(formattedactivityLinks);
 
 			$(".education-entry:last").append(formattedactivityPlace);
-
-
-
 
 			counter++;
 		}
@@ -662,7 +649,6 @@ educations.display = function() {
 
 
 communication.display = function () {
-	// body...
 
 	var formattedemail =  HTMLemail.replace("%color%", contactlinecolor);
 	var formattedtwitter = HTMLtwitter.replace("%color%", contactlinecolor);
@@ -691,6 +677,3 @@ counter = 0;
 work.display();
 counter = 0;
 educations.display();
-
-
-//$("#mapDiv").append(googleMap);
