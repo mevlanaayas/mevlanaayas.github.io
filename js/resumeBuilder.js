@@ -207,6 +207,17 @@ var work = {
 
 var projects = {
 	"myprojects" : [
+        {
+            "title":"Miye UI",
+            "dates":"February 2018 - Still in Development",
+            "describtion":"Website to show data that is collected from behance.com",
+            "skills" : "Javascript",
+            "members" : 1,
+            "files" : "https://github.com/mevlanaayas/miye-ui",
+            "links" : "https://github.com/mevlanaayas/miye-ui",
+            "type" : "Personal Work",
+            "img" : "none"
+        },
 		{
 			"title":"Django Teams",
 			"dates":"July 2017 - Still in Development",
