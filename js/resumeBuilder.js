@@ -27,7 +27,7 @@ var communication = {
 	"hometown": "Kosk/Aydin",
 	"language": "English",
 	"image": "https://cdn.pbrd.co/images/2B8RmIGl2.jpg",
-	"driverlicense" : "None",
+	"driverlicense" : "B2 soon...",
 	"welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
 	"skills": {
 		"C": 3,
@@ -38,7 +38,8 @@ var communication = {
 		"Python": 6,
 		"Reliability": 10,
 		"Django": 6,
-		"Spring": 4
+		"Spring": 4,
+        "Solidity": 4
 	}
 };
 
@@ -50,7 +51,7 @@ var educations = {
 			"degree": "Bachelor",
 			"major": "CSE-Computer Science Engineering",
 			"entryyear": 2013,
-			"finished" : null,
+			"finished" : 2018,
 			"website": "marmarauniversity.com",
 			"location": "Kadikoy/Istanbul",
 			"curriculum": "http://dosya.marmara.edu.tr/eng/cse/2013/belgeler/mufredat/CSE_Curriculum_2013_and_later.pdf"
@@ -147,16 +148,27 @@ var educations = {
 		"link": "https://github.com/lyk2016-python/velespi"
 
 	}, {
-		"title": "none",
-		"place": "none",
-		"dates": "none",
-		"days": "none",
-		"skills": "none",
+		"title": "Blockcircus Blockchain Hackhathon",
+		"place": "Kolektif House/Istanbul",
+		"dates": "June 29th - July 1st",
+		"hours": "72 hours",
+		"skills": ["Blockchain", "Solidity", " VueJS", "Web3js"],
 		"learnings": "none",
 		"certificate": "true",
 		"files": "none",
-		"links": "none"
-	}]
+		"links": "https://github.com/Unichain-turkey"
+	},{
+        "title": "none",
+        "place": "none",
+        "dates": "none",
+        "days": "none",
+        "skills": "none",
+        "learnings": "none",
+        "certificate": "true",
+        "files": "none",
+        "links": "none"
+    }
+    ]
 
 };
 
@@ -176,7 +188,7 @@ var work = {
 			"source" : "Not yet"
 		},
 		{
-			"employer":"SEKOM",
+			"employer":"SEKOM Yazılım",
 			"location":"Istanbul/Turkey",
 			"title":"Intern",
 			"dates":"June 2017 - July 2017",
@@ -189,10 +201,24 @@ var work = {
 			"source" : "Not yet"
 		},
 		{
-			"employer":"SEKOM",
+			"employer":"SEKOM Yazılım",
 			"location":"Istanbul/Turkey",
 			"title":"Part Time Software Developer",
-			"dates":"October 2017 - Present",
+			"dates":"October 2017 - June 2018",
+			"describtion":"",
+			"detail" : "I am working as a backend/middleware developer with tools of" +
+			" java and spring, python and django.",
+			"skills" : "Django/Python/Java/Spring",
+			"points" : "Not Graded, yet",
+			"jobdone" : "",
+			"website" : "https://www.sekom.com.tr/tr/",
+			"source" : "Not yet"
+		},
+		{
+			"employer":"SEKOM Yazılım",
+			"location":"Istanbul/Turkey",
+			"title":"Software Engineer",
+			"dates":"June 2018 - Present",
 			"describtion":"",
 			"detail" : "I am working as a backend/middleware developer with tools of" +
 			" java and spring, python and django.",
@@ -208,10 +234,32 @@ var work = {
 var projects = {
 	"myprojects" : [
         {
-            "title":"Miye UI",
-            "dates":"February 2018 - Still in Development",
+            "title":"Ether Registration",
+            "dates":"May 2018 - June 2018",
+            "describtion":"See details on github (please check the link below)",
+            "skills" : "VueJS / Solidity / Web3js",
+            "members" : 2,
+            "files" : "none",
+            "links" : "https://github.com/Unichain-turkey/ether-registration",
+            "type" : "Community",
+            "img" : "none"
+        },
+        {
+            "title":"Adhereum",
+            "dates":"May 2018 - June 2018",
+            "describtion":"See details on github (please check the link below)",
+            "skills" : "ueJS / Solidity / Web3js",
+            "members" : 2,
+            "files" : "none",
+            "links" : "https://github.com/Unichain-turkey/adhereum",
+            "type" : "Community",
+            "img" : "none"
+        },
+        {
+            "title":"Miye",
+            "dates":"February 2018 - May 2018",
             "describtion":"Website to show data that is collected from behance.com",
-            "skills" : "Javascript",
+            "skills" : "Javascript / Python / Web Crawling",
             "members" : 1,
             "files" : "https://github.com/mevlanaayas/miye-ui",
             "links" : "https://github.com/mevlanaayas/miye-ui",
@@ -222,7 +270,7 @@ var projects = {
 			"title":"Django Teams",
 			"dates":"July 2017 - Still in Development",
 			"describtion":"Django-teams is simple implementation of user-role-team-permission network.",
-			"skills" : "Django / Python",
+			"skills" : "Django / Python / Pip",
 			"members" : 1,
 			"files" : "https://github.com/mevlanaayas/django-teams",
 			"links" : "https://github.com/mevlanaayas/django-teams",
@@ -262,17 +310,6 @@ var projects = {
 			"files" : "https://github.com/mevlanaayas/mevlanaayas.github.io",
 			"links" : "https://mevlanaayas.github.io",
 			"type" : "Personal Development - Portfolio Website",
-			"img" : "none"
-		},
-		{
-			"title":"Hare And Hound Strategy Game",
-			"dates":"February 2016 - May 2016",
-			"describtion":"Implementation of Hare and Hounds game tha is playing on command line in our project. Project was developed with Assembly programming language",
-			"skills" : "Assembly Programming",
-			"members" : 1,
-			"files" : "none",
-			"links" : "none",
-			"type" : "Term Project",
 			"img" : "none"
 		},
 		{
@@ -334,7 +371,18 @@ var projects = {
 			"links" : "none",
 			"type" : "Term Project",
 			"img" : "none"
-		}
+		},
+        {
+            "title":"Hare And Hound Strategy Game",
+            "dates":"February 2016 - May 2016",
+            "describtion":"Implementation of Hare and Hounds game tha is playing on command line in our project. Project was developed with Assembly programming language",
+            "skills" : "Assembly Programming",
+            "members" : 1,
+            "files" : "none",
+            "links" : "none",
+            "type" : "Term Project",
+            "img" : "none"
+        }
 	]
 }
 
