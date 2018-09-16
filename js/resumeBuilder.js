@@ -30,16 +30,17 @@ var communication = {
 	"driverlicense" : "B2 soon...",
 	"welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
 	"skills": {
+        "Reliability": 10,
+        "Python": 6,
+        "Django": 6,
+        "VueJS": 5,
+        "JavaScript": 5,
+        "HTML/CSS": 5,
+        "Java": 4,
 		"C": 3,
-		"Java": 4,
-		"JavaScript": 5,
-		"VueJS": 5,
-		"HTML/CSS": 5,
-		"Python": 6,
-		"Reliability": 10,
-		"Django": 6,
-		"Spring": 4,
-        "Solidity": 4
+		"Spring": 3,
+        "DevOps": 3,
+        "Solidity": 2
 	}
 };
 
@@ -233,6 +234,17 @@ var work = {
 
 var projects = {
 	"myprojects" : [
+        {
+            "title":"Sürücü Havuzu",
+            "dates":"Aug 2018 - Oct 2018",
+            "describtion":"Web application project to match drivers and taxi owners",
+            "skills" : "VueJS / Django / Docker / Aws",
+            "members" : 1,
+            "files" : "none",
+            "links" : "http://18.223.102.61:1338",
+            "type" : "Freelance",
+            "img" : "none"
+        },
         {
             "title":"Ether Registration",
             "dates":"May 2018 - June 2018",
