@@ -241,7 +241,7 @@ var projects = {
             "skills" : "VueJS / Django / Docker / Aws",
             "members" : 1,
             "files" : "none",
-            "links" : "http://18.223.102.61:1338",
+            "links" : "http://18.223.102.61",
             "type" : "Freelance",
             "img" : "none"
         },
