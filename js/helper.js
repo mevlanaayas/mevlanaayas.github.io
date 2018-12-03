@@ -93,7 +93,6 @@ var HTMLseminarDates = '<div class="date-text">Date: %data%</div>';
 var HTMLseminarGTitle = '<div class="title-text">Guest title: %data%</div>';
 var HTMLseminarLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
-
 var HTMLActivity = '<div class= "title" style = "font-size: 20px;"> <i class="dropdown icon"></i> Activities </div>';
 var HTMLactivityContent = '<div id = "activitycontent" class= "content"></div>';
 var HTMLactivityStart = '<div class="education-entry"></div>';
@@ -107,26 +106,14 @@ var HTMLactivityLearnings = '<p>Learnings: %data%</p>';
 var HTMLactivityCertificate = '<p>Certificate: <a href="%data%" target="_blank"><i>Here it is</i></a></p>';
 var HTMLactivityLinks ='<p>Job was done in activity: <a href="%data%" target="_blank"><i>Link to open new tab.</i></a></p>';
 
-var internationalizeButton = '<button>Internationalize</button>';
-var googleMap = '<div id="map"></div>';
+var HTMLbookStart = '<div class="book-entry eight wide column"></div>';
+var HTMLbookTitleAuthor = '<div class = "top-title">%data% - %author%</div>';
+var HTMLbookDate = '<p>Read at: %data%</p>';
+var HTMLbookDescription = '<p>Description: %data%</p>';
+var HTMLbookSkills = '<p>Skill(s): %data%</p>';
+var HTMLbookLink = '<p>Link to Book: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a></p>';
+var HTMLbookExamples = '<p>Link to Tutorials: <a href="%data%" target="_blank"><i>Link to open on new tab</i></a></p>';
 
-/*
-The Internationalize Names challenge found in the lesson Flow Control from JavaScript Basics requires you to create a
-function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
-/*
-$(document).ready(function() {
-  $('button').click(function() { //instead of button enter id or class of button.
-    var $name = $('#name');
-    var iName = inName($name.text()) || function(){};
-    $name.html(iName);
-  });
-});
-*/
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript
-Basics.
-*/
 var clickLocations = [];
 
 function logClicks(x,y) {

@@ -396,7 +396,30 @@ var projects = {
             "img" : "none"
         }
 	]
-}
+};
+
+var books = {
+    "mybooks" : [
+        {
+            "title":"Introducing Go",
+            "author":"Caleb Doxsey",
+            "date":"Nov 2018",
+            "describtion":"Golang book",
+            "skills" : "Golang / Programming",
+            "link" : "link to book",
+			"examples": "https://github.com/mevlanaayas/gogo"
+        },
+        {
+            "title":"Docker Up and Running",
+            "author":"Karl Matthias & Sean P. Kane",
+            "date":"Nov 2018",
+            "describtion":"Docker book",
+            "skills" : "Docker / Unix & Linux",
+            "link" : "link to book",
+            "examples": "https://github.com/mevlanaayas/dupl"
+        }
+    ]
+};
 
 
 $("#creationsection").append(HTMLunderCreation);
@@ -493,7 +516,7 @@ work.display = function() {
 
 		counter++;
 	}
-}
+};
 
 projects.display = function() {
 	for (project in projects.myprojects){
@@ -545,8 +568,48 @@ projects.display = function() {
 
 		counter++;
 	}
-}
+};
 counter = 0;
+
+books.display = function() {
+    for (book in books.mybooks){
+        //create a new div for projects
+        $("#books").append(HTMLbookStart);
+
+        var formattedbookTitle = HTMLbookTitleAuthor.replace("%data%", books.mybooks[book].title);
+        var formattedbookAuthorTitle = formattedbookTitle.replace("%author%", books.mybooks[book].author);
+        var formattedbookDate = HTMLbookDate.replace("%data%", books.mybooks[book].dates);
+        var formattedbookDesc = HTMLbookDescription.replace("%data%", books.mybooks[book].describtion);
+        var formattedbookSkills = HTMLbookSkills.replace("%data%", books.mybooks[book].skills);
+
+
+        if(books.mybooks[book].links==="none"){
+            HTMLbookLinks = '<p>Links: %data%</p>';
+        }
+        var formattedbookLink = HTMLbookLink.replace("%data%", books.mybooks[book].link);
+        var formattedbookExamples = HTMLbookExamples.replace("%data%", books.mybooks[book].examples);
+
+        if(counter > 0){
+            $(".book-entry:last").append("<hr>");
+        }
+
+        $(".book-entry:last").append(formattedbookAuthorTitle);
+
+        $(".book-entry:last").append(formattedbookDate);
+
+        $(".book-entry:last").append(formattedbookDesc);
+
+        $(".book-entry:last").append(formattedbookSkills);
+
+        $(".book-entry:last").append(formattedbookLink);
+
+        $(".book-entry:last").append(formattedbookExamples);
+
+        counter++;
+    }
+};
+counter = 0;
+
 educations.display = function() {
 
 	$("#education").append(HTMLDropdown);
@@ -741,6 +804,8 @@ communication.display = function () {
 counter = 0;
 projects.display();
 counter = 0;
+books.display();
+counter =0;
 displayBio();
 counter = 0;
 communication.display();
