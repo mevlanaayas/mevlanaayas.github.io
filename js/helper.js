@@ -107,7 +107,7 @@ var HTMLactivityCertificate = '<p>Certificate: <a href="%data%" target="_blank">
 var HTMLactivityLinks ='<p>Job was done in activity: <a href="%data%" target="_blank"><i>Link to open new tab.</i></a></p>';
 
 var HTMLbookStart = '<div class="book-entry eight wide column"></div>';
-var HTMLbookTitleAuthor = '<div class = "top-title">%data% - %author%</div>';
+var HTMLbookTitleAuthor = '<div style="line-height: 1.1em !important;" class = "top-title">%data% - %author%</div>';
 var HTMLbookDate = '<p>Read at: %data%</p>';
 var HTMLbookDescription = '<p>Description: %data%</p>';
 var HTMLbookSkills = '<p>Skill(s): %data%</p>';

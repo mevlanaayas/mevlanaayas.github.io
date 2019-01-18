@@ -31,16 +31,17 @@ var communication = {
 	"welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
 	"skills": {
         "Reliability": 10,
+		"Django": 7,
+		"Web APIs": 7,
         "Python": 6,
-        "Django": 6,
+		"Docker": 6,
         "VueJS": 5,
-        "JavaScript": 5,
-        "HTML/CSS": 5,
-        "Java": 4,
+		"Golang": 4,
+		"DevOps": 4,
+        "Java": 3,
 		"C": 3,
 		"Spring": 3,
-        "DevOps": 3,
-        "Solidity": 2
+		"k8s": 2,
 	}
 };
 
@@ -71,13 +72,13 @@ var educations = {
 
 	],
 	"onlinecourses": [{
-		"title": "SEO Training Course by Moz",
-		"author": "Moz moz.com",
-		"dates": "2017",
-		"skills": "none",
-		"url": "https://www.udemy.com/whiteboard-seo/",
-		"learnings": "none",
-		"certificate": "https://www.udemy.com/certificate/UC-R0NXNKNF/"
+		"title": "Docker Mastery: The Complete Toolset From a Docker Captain",
+		"author": "Bret Fisher",
+		"dates": "Dec 2018",
+		"skills": "Docker, Docker Compose, Swarm",
+		"url": "https://www.udemy.com/docker-mastery/",
+		"learnings": "Build, compose, deploy, and manage Docker containers from development to DevOps based Swarm clusters",
+		"certificate": "none"
 	},{
         "title": "none",
         "author": "Udacity",
@@ -176,50 +177,10 @@ var educations = {
 var work = {
 	"jobs" : [
 		{
-			"employer":"VB-AP",
-			"location":"Bursa/Turkey",
-			"title":"Intern",
-			"dates":"June 2016 - September 2016",
-			"describtion":"I had an internship at VB-AP that works on ERP and SAP.",
-			"detail" : "Here, there is no detail about my Internship adventure.",
-			"skills" : "HTML/CSS-JavaScript",
-			"points" : "4.7 over 5 according to Internship report",
-			"jobdone" : "Have Worked on Official Web Site",
-			"website" : "http://www.v-bap.com/vbap2/",
-			"source" : "Not yet"
-		},
-		{
-			"employer":"SEKOM Yazılım",
-			"location":"Istanbul/Turkey",
-			"title":"Intern",
-			"dates":"June 2017 - July 2017",
-			"describtion":"I had an internship at Sekom Yazılım.",
-			"detail" : "I worked on application is called Out Of Office Manager that control and manage employee leave date. Come again after little time for more detail.",
-			"skills" : "Django/Python/VueJS",
-			"points" : "Not Graded, yet",
-			"jobdone" : "Personal management Fullstack web application",
-			"website" : "https://www.sekom.com.tr/tr/",
-			"source" : "Not yet"
-		},
-		{
-			"employer":"SEKOM Yazılım",
-			"location":"Istanbul/Turkey",
-			"title":"Part Time Software Developer",
-			"dates":"October 2017 - June 2018",
-			"describtion":"",
-			"detail" : "I am working as a backend/middleware developer with tools of" +
-			" java and spring, python and django.",
-			"skills" : "Django/Python/Java/Spring",
-			"points" : "Not Graded, yet",
-			"jobdone" : "",
-			"website" : "https://www.sekom.com.tr/tr/",
-			"source" : "Not yet"
-		},
-		{
 			"employer":"SEKOM Yazılım",
 			"location":"Istanbul/Turkey",
 			"title":"Software Engineer",
-			"dates":"June 2018 - Present",
+			"dates":"June 2017  - Nov 2018",
 			"describtion":"",
 			"detail" : "I am working as a backend/middleware developer with tools of" +
 			" java and spring, python and django.",
@@ -227,6 +188,19 @@ var work = {
 			"points" : "Not Graded, yet",
 			"jobdone" : "",
 			"website" : "https://www.sekom.com.tr/tr/",
+			"source" : "Not yet"
+		},
+		{
+			"employer":"Finartz",
+			"location":"Istanbul/Turkey",
+			"title":"Software Engineer",
+			"dates":"Nov 2018 - Present",
+			"describtion":"",
+			"detail" : "",
+			"skills" : "Payment Systems/Go/k8s/Flutter/VueJs",
+			"points" : "Not Graded, yet",
+			"jobdone" : "",
+			"website" : "https://finartz.com",
 			"source" : "Not yet"
 		}
 	]
@@ -417,7 +391,16 @@ var books = {
             "skills" : "Docker / Unix & Linux",
             "link" : "link to book",
             "examples": "https://github.com/mevlanaayas/dupl"
-        }
+        },
+		{
+			"title":"Kubernetes Up and Running",
+			"author":"Kelsey Hightower, Brendan Burns, Joe Beda",
+			"date":"Jan 2019",
+			"describtion":"Kubernetes book",
+			"skills" : "Kubernetes, Docker / Unix, Linux",
+			"link" : "link to book",
+			"examples": "none"
+		}
     ]
 };
 
