@@ -27,7 +27,7 @@ var HTMLbioStart = '<div class="bio-entry"></div>';
 var HTMLbioHome = '<p>Hometown: %data%</p>';
 var HTMLbioLiving = '<hp>Living In: %data%</p>';
 var HTMLbioForeign = '<hp>Foreign Language(s): %data%</p>';
-var HTMLbioPic = '<img src="%data%">';
+var HTMLbioPic = '<img class="nes-avatar is-rounded is-large" alt="Gravatar image example" src="%data%" style="image-rendering: pixelated;">';
 var HTMLwelcomeMsg = '<span>%data%</span>';
 
 
