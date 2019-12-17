@@ -25,7 +25,7 @@ var bio = {
     "role": "Computer Science Engineer",
     "hometown": "Kosk/Aydin",
     "language": "English",
-    "image": "pp.jpeg",
+    "image": "pp.jpg",
     "driverlicense": "B2 soon...",
     "welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
     "skills": {
