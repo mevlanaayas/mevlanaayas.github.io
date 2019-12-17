@@ -30,17 +30,15 @@ var bio = {
     "welcomeMessage": "Welcome, here I am! All jobs are listed below thats were done by Mevlana. If you want help, please dont hesitate to ask me!",
     "skills": {
         "Reliability": 10,
-        "Django": 7,
-        "Web APIs": 7,
+        "Algorithm/Data Structures": 7,
+        "Web Applications": 7,
+        "Java": 7,
         "Python": 6,
         "Docker": 6,
-        "VueJS": 5,
+        "C#": 4,
+        "Game Development": 4,
         "Golang": 4,
-        "DevOps": 4,
-        "Java": 3,
-        "C": 3,
-        "Spring": 3,
-        "k8s": 2,
+        "C": 3
     }
 };
 
@@ -57,35 +55,50 @@ var educations = {
         "location": "Kadikoy/Istanbul",
         "curriculum": "http://dosya.marmara.edu.tr/eng/cse/2013/belgeler/mufredat/CSE_Curriculum_2013_and_later.pdf"
 
-    }, {
-        "name": "Kasustu MPHS",
-        "city": "Trabzon",
-        "degree": "Highschool",
-        "major": "Math Science",
-        "entryyear": 2009,
-        "finished": 2013,
-        "website": "kasustucpl.com",
-        "location": "Yomra/Trabzon",
-        "curriculum": "None"
     }
 
     ],
-    "onlinecourses": [{
-        "title": "Docker Mastery: The Complete Toolset From a Docker Captain",
-        "author": "Bret Fisher",
-        "dates": "Dec 2018",
-        "skills": "Docker, Docker Compose, Swarm",
-        "url": "https://www.udemy.com/docker-mastery/",
-        "learnings": "Build, compose, deploy, and manage Docker containers from development to DevOps based Swarm clusters",
-        "certificate": "none"
-    }, {
-        "title": "none",
-        "author": "Udacity",
-        "dates": "2017",
-        "skills": "none",
-        "url": "udacity.com",
-        "learnings": "none"
-    }
+    "onlinecourses": [
+        {
+            "title": "Pluralsight Unity & C# Paths",
+            "author": "Mixed (Pluralsight)",
+            "dates": "Oct 2019 - Present",
+            "skills": "Unity, C#, Game Development",
+            "url": "https://app.pluralsight.com/paths",
+            "learnings": "Learn and advance on C# Programming and Unity game engine.",
+            "certificate": "none"
+        }, {
+            "title": "Become a Game Designer the Complete Series Coding to Design",
+            "author": "[ School of Game Design ]",
+            "dates": "June 2019",
+            "skills": "Unity, C#",
+            "url": "https://www.udemy.com/course/become-a-game-designer/",
+            "learnings": "Build Unity games from scratch by using best practices",
+            "certificate": "none"
+        }, {
+            "title": "Complete C# Unity Developer 2D: Learn to Code Making Games",
+            "author": "Ben Tristem, GameDev.tv by Ben Tristem, Rick Davidson",
+            "dates": "Feb 2019",
+            "skills": "Unity, C#",
+            "url": "https://www.udemy.com/course/unitycourse/",
+            "learnings": "Build Unity games from scratch by using best practices",
+            "certificate": "none"
+        }, {
+            "title": "Docker Mastery: The Complete Toolset From a Docker Captain",
+            "author": "Bret Fisher",
+            "dates": "Dec 2018",
+            "skills": "Docker, Docker Compose, Swarm",
+            "url": "https://www.udemy.com/docker-mastery/",
+            "learnings": "Build, compose, deploy, and manage Docker containers from development to DevOps based Swarm clusters",
+            "certificate": "none"
+        }, {
+            "title": "none",
+            "author": "Udacity",
+            "dates": "2017",
+            "skills": "none",
+            "url": "udacity.com",
+            "learnings": "none"
+        }
     ],
     "seminars": [{
         "title": "Bilişim Erişilebilirliği",
@@ -138,7 +151,8 @@ var educations = {
 
 
     }],
-    "activities": [{
+    "activities": [
+        /*{
         "title": "Web programming with Python/Django",
         "place": "Bolu/Turkey",
         "dates": "5-20 August 2016",
@@ -158,17 +172,17 @@ var educations = {
         "certificate": "true",
         "files": "none",
         "links": "https://github.com/Unichain-turkey"
-    }, {
-        "title": "none",
-        "place": "none",
-        "dates": "none",
-        "days": "none",
-        "skills": "none",
-        "learnings": "none",
-        "certificate": "true",
-        "files": "none",
-        "links": "none"
-    }
+    }, */{
+            "title": "none",
+            "place": "none",
+            "dates": "none",
+            "days": "none",
+            "skills": "none",
+            "learnings": "none",
+            "certificate": "true",
+            "files": "none",
+            "links": "none"
+        }
     ]
 
 };
@@ -176,31 +190,32 @@ var educations = {
 var work = {
     "jobs": [
         {
-            "employer": "SEKOM Yazılım",
+            "employer": "Skyz Tech (a.k.a SEKOM Yazılım)",
             "location": "Istanbul/Turkey",
             "title": "Software Engineer",
             "dates": "June 2017  - Nov 2018",
-            "describtion": "",
-            "detail": "I am working as a backend/middleware developer with tools of" +
+            "description": "",
+            "detail": "I worked as a backend/middleware developer with tools of" +
                 " java and spring, python and django.",
             "skills": "Django/Python/Java/Spring",
-            "points": "Not Graded, yet",
-            "jobdone": "",
-            "website": "https://www.sekom.com.tr/tr/",
-            "source": "Not yet"
+            "points": "4/5",
+            "jobdone": "Maintained web services with high availability and reliability. Developed new services on existing codebase.",
+            "website": "http://www.skyz.tech/",
+            "source": "Private!"
         },
         {
             "employer": "Finartz",
             "location": "Istanbul/Turkey",
             "title": "Software Engineer",
             "dates": "Nov 2018 - Present",
-            "describtion": "",
-            "detail": "",
-            "skills": "Payment Systems/Go/k8s/Flutter/VueJs",
-            "points": "Not Graded, yet",
-            "jobdone": "",
+            "description": "",
+            "detail": "I worked as a backend developer with tools of" +
+                " java, spring, webflux and golang.",
+            "skills": "Payment Systems/Go/Java/Spring",
+            "points": "4/5",
+            "jobdone": "Developed web services with high availability and reliability from scratch.",
             "website": "https://finartz.com",
-            "source": "Not yet"
+            "source": "Private!"
         }
     ]
 }
@@ -208,14 +223,25 @@ var work = {
 var projects = {
     "myprojects": [
         {
-            "title": "Sürücü Havuzu",
-            "dates": "Aug 2018 - Oct 2018",
-            "describtion": "Web application project to match drivers and taxi owners",
-            "skills": "VueJS / Django / Docker / Aws",
+            "title": "Swingo - P2P Cargo Delivery",
+            "dates": "Jun 2018 - Jul 2019",
+            "describtion": "Marketplace application to match carriers and senders.",
+            "skills": "VueJS / Golang / Django / Docker / Aws",
+            "members": 2,
+            "files": "none",
+            "links": "https://www.goswingo.com/",
+            "type": "Startup",
+            "img": "none"
+        },
+        {
+            "title": "Bookia",
+            "dates": "Aug 2019 - Oct 2019",
+            "describtion": "Web application project to save unknown words and their usages from books.",
+            "skills": "VueJS / Golang / Docker / Aws",
             "members": 1,
             "files": "none",
-            "links": "http://18.223.102.61",
-            "type": "Freelance",
+            "links": "http://18.188.233.166/",
+            "type": "Personal/Demonstration",
             "img": "none"
         },
         {
@@ -252,17 +278,6 @@ var projects = {
             "img": "none"
         },
         {
-            "title": "Django Teams",
-            "dates": "July 2017 - Still in Development",
-            "describtion": "Django-teams is simple implementation of user-role-team-permission network.",
-            "skills": "Django / Python / Pip",
-            "members": 1,
-            "files": "https://github.com/mevlanaayas/django-teams",
-            "links": "https://github.com/mevlanaayas/django-teams",
-            "type": "Open Source - Python Library",
-            "img": "none"
-        },
-        {
             "title": "Django Heroku Documents",
             "dates": "March 2018 - Still in Development",
             "describtion": "I try to explain requirements which ara required to install and" +
@@ -273,17 +288,6 @@ var projects = {
             "files": "https://github.com/mevlanaayas",
             "links": "https://github.com/mevlanaayas",
             "type": "Open Source - Documentation",
-            "img": "none"
-        },
-        {
-            "title": "Django Base",
-            "dates": "July 2017 - Still in Development",
-            "describtion": "Django creation tool for Models, Views, Rest particles and basic contents. Front-end support with VueJS",
-            "skills": "Django / Python / VueJS",
-            "members": 1,
-            "files": "none",
-            "links": "none",
-            "type": "Open Source - Django Project basic content creation Tools",
             "img": "none"
         },
         {
@@ -374,12 +378,30 @@ var projects = {
 var books = {
     "mybooks": [
         {
+            "title": "Programming C# 5.0",
+            "author": "Ian Griffiths",
+            "date": "August 2019",
+            "describtion": "C# Book",
+            "skills": "C# / Programming",
+            "link": "link to book",
+            "examples": "not yet"
+        },
+        {
+            "title": "Go in Action",
+            "author": "William Kennedy with Brian Ketelsen and Erik St. Martin",
+            "date": "October 2019",
+            "describtion": "Golang book",
+            "skills": "Golang / Programming",
+            "link": "https://www.manning.com/books/go-in-action",
+            "examples": "not yet"
+        },
+        {
             "title": "Introducing Go",
             "author": "Caleb Doxsey",
             "date": "Nov 2018",
             "describtion": "Golang book",
             "skills": "Golang / Programming",
-            "link": "link to book",
+            "link": "https://www.oreilly.com/library/view/introducing-go/9781491941997/",
             "examples": "https://github.com/mevlanaayas/gogo"
         },
         {
@@ -647,6 +669,7 @@ educations.display = function () {
             var formattedonlineDates = HTMLonlineDates.replace("%data%", educations.onlinecourses[onlinecourse].date);
             var formattedonlineSkills = HTMLonlineSkills.replace("%data%", educations.onlinecourses[onlinecourse].skills);
             var formattedonlineUrl = HTMLonlineURL.replace("%data%", educations.onlinecourses[onlinecourse].url);
+            formattedonlineUrl = formattedonlineUrl.replace("%url%", educations.onlinecourses[onlinecourse].url);
             var formattedonlineLearning = HTMLonlineLearning.replace("%data%", educations.onlinecourses[onlinecourse].learnings);
 
             if (counter > 0) {
