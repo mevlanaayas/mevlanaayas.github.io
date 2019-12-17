@@ -10,7 +10,6 @@ Created by Cameron Pittman, Mostly Changed by Mevlana Ayas
 var HTMLunderCreation = '<div class="ui progress yellow large"><div class="bar green" style="transition-duration: 300ms; width: 80%;"><div class="progress" style="color:white">80%</div></div><div class="label">On the Creation Phase <i class="smile icon"></i> Check Demo</div></div><br>'
 
 
-
 var HTMLheaderName = '<h1>%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span>';
 
@@ -27,7 +26,7 @@ var HTMLbioStart = '<div class="bio-entry"></div>';
 var HTMLbioHome = '<p>Hometown: %data%</p>';
 var HTMLbioLiving = '<hp>Living In: %data%</p>';
 var HTMLbioForeign = '<hp>Foreign Language(s): %data%</p>';
-var HTMLbioPic = '<img src="%data%">';
+var HTMLbioPic = '<img class="nes-avatar is-rounded is-large" alt="Gravatar image example" src="%data%" style="image-rendering: pixelated;">';
 var HTMLwelcomeMsg = '<span>%data%</span>';
 
 
@@ -71,7 +70,7 @@ var HTMLschoolstartDate = '<div class="date-text"><i>%data%';
 var HTMLschoolfinishDate = '%data%</i></div>';
 var HTMLschoolLocation = '<p>Location: %data%</p>';
 var HTMLschoolMajor = '<p> Major: %data%</p>';
-var HTMLschoolCurriculum= '<a href="%data%" target="_blank"><i>Curriculum</i></a>';
+var HTMLschoolCurriculum = '<a href="%data%" target="_blank"><i>Curriculum</i></a>';
 
 var HTMLOnlines = '<div class= "title" style = "font-size: 20px;"><i class="dropdown icon"></i> Online Courses </div>';
 var HTMLonlineContent = '<div id = "onlinecontent" class= "content"></div>';
@@ -80,7 +79,7 @@ var HTMLonlineTitle = '<div class = "top-title">%data%';
 var HTMLonlineAuthor = '%data%</div>';
 var HTMLonlineDates = '<div class="date-text"><i>%data%</i></div>';
 var HTMLonlineSkills = '<div>Skills: %data%</div><br>';
-var HTMLonlineURL = '<p><a href="#">%data%</a></p>';
+var HTMLonlineURL = '<p><a href="%url%" target="_blank">%data%</a></p>';
 var HTMLonlineLearning = '<p style = "margin-bottom : 0">Learnings: %data%</p>';
 
 var HTMLSeminars = '<div class= "title" style = "font-size: 20px;"> <i class="dropdown icon"></i> Seminars </div>';
@@ -104,7 +103,7 @@ var HTMLactivityskillsStart = '<p>Skills those were used in activity:</p>';
 var HTMLactivitySkills = '<ul>%data%</ul>';
 var HTMLactivityLearnings = '<p>Learnings: %data%</p>';
 var HTMLactivityCertificate = '<p>Certificate: <a href="%data%" target="_blank"><i>Here it is</i></a></p>';
-var HTMLactivityLinks ='<p>Job was done in activity: <a href="%data%" target="_blank"><i>Link to open new tab.</i></a></p>';
+var HTMLactivityLinks = '<p>Job was done in activity: <a href="%data%" target="_blank"><i>Link to open new tab.</i></a></p>';
 
 var HTMLbookStart = '<div class="book-entry eight wide column"></div>';
 var HTMLbookTitleAuthor = '<div style="line-height: 1.1em !important;" class = "top-title">%data% - %author%</div>';
@@ -116,20 +115,20 @@ var HTMLbookExamples = '<p>Link to Tutorials: <a href="%data%" target="_blank"><
 
 var clickLocations = [];
 
-function logClicks(x,y) {
-  clickLocations.push(
-    {
-      x: x,
-      y: y
-    }
-  );
-  console.log('x location: ' + x + '; y location: ' + y);
+function logClicks(x, y) {
+    clickLocations.push(
+        {
+            x: x,
+            y: y
+        }
+    );
+    console.log('x location: ' + x + '; y location: ' + y);
 }
 
-$(document).click(function(loc) {
-  // your code goes here!
-  var x = loc.pageX;
-  var y = loc.pageY;
+$(document).click(function (loc) {
+    // your code goes here!
+    var x = loc.pageX;
+    var y = loc.pageY;
 
-  logClicks(x,y);
+    logClicks(x, y);
 });
