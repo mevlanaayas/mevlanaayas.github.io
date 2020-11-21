@@ -33,11 +33,11 @@ var bio = {
         "Algorithm/Data Structures": 7,
         "Web Applications": 7,
         "Java": 7,
-        "Python": 6,
+        "Python": 5,
         "Docker": 6,
         "C#": 4,
         "Game Development": 4,
-        "Golang": 4,
+        "Golang": 5,
         "C": 3
     }
 };
